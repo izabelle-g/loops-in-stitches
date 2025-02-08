@@ -5,9 +5,12 @@ function setup() {
     let canvas = createCanvas(x, y);
     canvas.position( ( ( windowWidth - x )/2 ), ( ( windowHeight - y )/2 ) );
     setupFlowfield();
+    createParticles();
 }
 
 function draw() {
     generateFlowfield();
-    showFlowfield();
+    //showFlowfield();
+    followField();
+    showParticles();
 }
