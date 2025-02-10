@@ -1,7 +1,7 @@
 class Particle {
     constructor(x, y) {
       this.pos = createVector(x, y);
-      this.size = random(4, 20); // adjusts particle size
+      this.size = random(10, 40); // adjusts particle size
       this.prevPos = this.pos.copy();
       this.colour = getColour(noise(x, y));
     }
@@ -25,16 +25,15 @@ class Particle {
         circle(this.pos.x, this.pos.y, this.size);
     }
 
-    showRectangles(){
-        push();
-        angleMode(RADIANS);
+    showRectangles() {
         strokeWeight(1);
         stroke(0);
         fill(this.colour);
-        //translate(this.pos.x, this.pos.y);
-        //rotate(angleBetween(this.pos, this.prevPos));
         rect(this.pos.x, this.pos.y, this.size, this.size * 2);
-        pop();
+    }
+
+    showLines() {
+
     }
     
     updatePrev() {
@@ -49,3 +48,47 @@ class Particle {
       this.pos.y += sin(n) * this.speed;
     }
   }
+
+  let particles = [];
+let numpart = 6000; // adjusts number of particles
+
+function createParticles() {
+    for( let i = 0; i < numpart; i++ ){
+        particles[i] = new Particle( random(width), random(height) );
+    }
+}
+
+function showParticles() {
+    background(255);
+    for( let p of particles ){
+        //p.showPoints();
+        //p.showCircles();
+        p.showRectangles();
+        //p.showLines();
+    }
+}
+
+function followField() {
+    for(let p of particles) {
+        let n = noise(p.pos.x, p.pos.y);
+        
+        let xIndex = floor(p.pos.x / grid);
+        let yIndex = floor(p.pos.y / grid);
+        xIndex = constrain(xIndex, 0, cols - 1);
+        yIndex = constrain(yIndex, 0, rows - 1);
+        
+        index = xIndex + yIndex * cols;
+        let v = flowfield[index][0];
+        p.updatePrev();
+        p.pos.add(v);
+      
+        if(!onScreen(p.pos)) {
+            p.pos.x = random(width);
+            p.pos.y = random(height);
+        }
+    }
+}
+
+function onScreen(p) {
+    return p.x >= 0 && p.x <= width && p.y >= 0 && p.y <= height;
+}

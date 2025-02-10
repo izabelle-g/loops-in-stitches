@@ -1,6 +1,6 @@
 let cols, rows;
 let zoff = 0;
-let grid = 16;  // adjusts the aida cloth size (maybe; because want one grid = 1 inch then 11, 14, etc., stitches in said grid)
+let grid = 16;  
 let flowfield = [];
 
 function setupFlowfield() {
@@ -12,7 +12,7 @@ function setupFlowfield() {
 
 function generateFlowfield() {
     let inc = 0.1;
-    let zInc = 0.0009; // adjusts the wiggly
+    let zInc = 0.00009; // adjusts the wiggly
     let yoff = 0;
 
     for( let y = 0; y < rows; y++ ){
@@ -24,8 +24,8 @@ function generateFlowfield() {
             let v = p5.Vector.fromAngle(angle);
 
             xoff += inc;
-            v.setMag(1);  // adjusts how much the particles follow it
-            flowfield[index] = [v, x, y];
+            v.setMag(2);  // adjusts how much the particles follow it
+            flowfield[index] = [v, x, y, n];
         }
         yoff += inc;
         zoff += zInc;
@@ -38,8 +38,10 @@ function showFlowfield() {
         if( f != undefined ) {
             push();
             translate( f[1] * grid, f[2] * grid );
+            //textSize(5);
+            //text( round( f[3], 2 ), f[1], f[2], grid, grid );
             rotate( f[0].heading() );
-            stroke(0, 25);
+            stroke(0);
             strokeWeight(1); 
             line( 0, 0, grid, 0 );
             pop();
