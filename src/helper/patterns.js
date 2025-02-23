@@ -1,3 +1,20 @@
+function scales() {
+    background(255, 2);
+    zInc = 0.0009;
+    for(let f of flowfield) {
+      if(f != undefined) {
+        let n = noise( f[0].x, f[0].y, zoff );
+        push();
+        stroke( getColour(n) );
+        translate( f[1] * fGrid+fGrid, f[2] * fGrid+fGrid/2 );
+        rotate( f[0].heading() );
+        strokeWeight(1);
+        line( 0, 0, fGrid, 0 );
+        pop();
+      }
+    }
+  }
+
 function getColour(noiseVal) {
     let colour;
     let p = [ color("#ffd670"),
