@@ -10,7 +10,7 @@ function setupFlowfield() {
 
 function generateFlowfield() {
     let inc = 0.1;
-    let zInc = 0.0005; // adjusts the wiggly; TODO: adjust with slider
+    let zInc = 0.0005 * spdSlider.value(); 
     let yoff = 0;
 
     for( let y = 0; y < cells; y++ ){
@@ -18,11 +18,11 @@ function generateFlowfield() {
         for( let x = 0; x < cells; x++ ){
             let index = x + y * cells;
             let n = noise(xoff, yoff, zoff);
-            let angle = n * TAU; // adjusts the craziness (more different flow directions); TODO: adjust with slider
+            let angle = n * TAU;
             let v = p5.Vector.fromAngle(angle);
 
             xoff += inc;
-            v.setMag(2);  // adjusts how much the particles follow it; TODO: adjust with buttons or slider
+            v.setMag(2);
             flowfield[index] = [v, x, y];
         }
         yoff += inc;

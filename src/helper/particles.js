@@ -59,11 +59,11 @@ function createParticles() {
 }
 
 function showParticles() {
-    background(255);
+    background(255, 25);
     for( let p of particles ){
         //p.showPoints();
         //p.showCircles();
-        p.showRectangles();
+        //p.showRectangles();
         //p.showLines();
     }
 }
