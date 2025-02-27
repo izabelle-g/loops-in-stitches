@@ -1,27 +1,28 @@
 const drawArea = 600;
-const aida = [ 11, 14, 16, 18, 20, 22, 25, 28, 32 ];  // aida cloth sizes; TODO: make slider
+const aida = [ 11, 14, 16, 18, 20, 22, 25, 28, 32 ];
 let inches = 4; // TODO: make slider/buttons/???
-let aidaSlider, spdSlider, vecSlider;
+let aidaSlider, spdSlider;
 
 function setup() {
     let canvas = createCanvas( drawArea, drawArea );
     canvas.position( ( ( windowWidth - drawArea )/2 ), ( ( windowHeight - drawArea )/2 ) ); // center canvas
     setupFlowfield();
     createParticles();
-    setupControls();
-    //stitchGrid();
+    //setupControls();
 }
 
 function draw() {
     generateFlowfield();
-    showFlowfield();
+    //showFlowfield();
     //stitchGrid();
     //scales();
+    smoke();
     //followField();
     //showParticles();
 }
 
 function stitchGrid() { // TODO: figure out how to make it stop repeating thingies
+    background(255);
     let iGrid = drawArea / inches;
     let sGrid = iGrid / aida[ aidaSlider.value() ];
     let grid = drawArea / sGrid;
@@ -46,12 +47,10 @@ function stitchGrid() { // TODO: figure out how to make it stop repeating thingi
 }
 
 function setupControls() {
-    //text( 'Speed', ( ( windowWidth + drawArea )/2 ), ( windowHeight - drawArea ) ); // TODO: figure out this thing
     aidaSlider = createSlider( 0, 8, 0, 1 );
     aidaSlider.position( ( ( windowWidth + drawArea )/2 ), ( windowHeight - drawArea ) - 60 );  
     aidaSlider.size(80);
 
-    //text( 'Speed', ( ( windowWidth + drawArea )/2 ), ( windowHeight - drawArea ) ); // TODO: figure out this thing
     spdSlider = createSlider( 1, 5, 1, 1 );
     spdSlider.position( ( ( windowWidth + drawArea )/2 ), ( windowHeight - drawArea ) );  
     spdSlider.size(80);

@@ -1,6 +1,6 @@
 let cells;
 let zoff = 0;
-let fGrid = 30;  
+let fGrid = 11;  
 let flowfield = [];
 
 function setupFlowfield() {
@@ -10,7 +10,8 @@ function setupFlowfield() {
 
 function generateFlowfield() {
     let inc = 0.1;
-    let zInc = 0.0005 * spdSlider.value(); 
+    //let zInc = 0.0005 * spdSlider.value(); 
+    let zInc = 0.0005;
     let yoff = 0;
 
     for( let y = 0; y < cells; y++ ){
