@@ -1,42 +1,43 @@
 const fileInput = document.getElementById("txtFile");
-
-fileInput.addEventListener("change", handleFileSelection);
-
-function handleFileSelection(event) {
-  const file = event.target.files[0];
-  
-  // Validate file existence and type
-  if (!file) {
-    showMessage("No file selected. Please choose a file.", "error");
-    return;
-  }
-
-  // Read the file
-  const reader = new FileReader();
-  reader.onload = () => {
-    const inString = reader.result.toString();
-    console.log(inString);
-  };
-  reader.onerror = () => {
-    showMessage("Error reading the file. Please try again.", "error");
-  };
-  reader.readAsText(file);
-}
-
-// Displays a message to the user
-function showMessage(message, type) {
-  messageDisplay.textContent = message;
-  messageDisplay.style.color = type === "error" ? "red" : "green";
-}
-
 const submit = document.getElementById('textBtn');
+const key = "07a4207b0f75eed05b31957cb1d2d16bc3bc7ce5"; // TODO: hide this
+const model = "finetuned-llama-3-70b";
 
 submit.addEventListener("click", () => {
-    const entry = document.getElementById('textEntry').value;
-    if(entry == "") {
-        console.log("No entry found.  Please input in text area.");
-    } else{
-        console.log(entry);
+    let textIn = document.getElementById('textEntry').value;
+    const fileIn = fileInput.files[0];
+
+    if(textIn == "" && fileIn == undefined) {
+        console.log("No entry found.  Please enter journal entry.");
+    } else if(textIn != "" && fileIn == undefined) {
+        seAnalysis(textIn);
+        textIn = "";
+    } else if(fileIn != undefined && textIn == "") {
+        const reader = new FileReader();
+        reader.onload = () => {
+            let inString = reader.result.toString();
+            seAnalysis(inString);
+        };
+        reader.onerror = () => {
+            console.log("Error reading the file.  Please try again.");
+        }
+        reader.readAsText(fileIn);
     }
 });
+
+function seAnalysis (entry) { //TODO: CHANGE TO IMPORT THINGY LOOK AT YOUR GITHUB
+    const NLPCloudClient = require('nlpcloud');
+    const client = new NLPCloudClient(model, key, true);
+    
+    client.sentiment({
+        text: entry,
+        target: ''
+    }).then( (resp) => {
+        console.log(resp.data);
+    }).catch( (err) => {
+        console.error(err.response.status);
+        console.error(err.response.data.detail);
+    });
+}
+
 
