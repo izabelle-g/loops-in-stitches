@@ -14,6 +14,13 @@
   <body>
     <div id="root"></div>
     <!--<script type="module" src="/src/main.jsx"></script>-->
+      <label for="txtFile">Select a text file to upload: </label>
+      <input type="file" id="txtFile" name="txtfile" accept=".txt"><br><br>
+      <label for="textEntry">OR type journal entry:</label><br>
+      <textarea id="textEntry"></textarea><br><br>
+      <input type="button" id="textBtn" name="textBtn" value="Submit Entry">
+
     <script type="text/javascript" src="/src/sketch.js"></script>
+    <script type="text/javascript" src="/src/helper/fileInput.js"></script>
   </body>
 </html>
