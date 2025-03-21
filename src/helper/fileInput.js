@@ -1,8 +1,11 @@
+import NLPCloudClient from "nlpcloud";
+
 const fileInput = document.getElementById("txtFile");
 const submit = document.getElementById('textBtn');
-const key = "07a4207b0f75eed05b31957cb1d2d16bc3bc7ce5"; // TODO: hide this
-const model = "finetuned-llama-3-70b";
+const url = "https://api.nlpcloud.io/v1/finetuned-llama-3-70b/sentiment"; // TODO: hide later
+const key = "63f2ca79ed66dacb420f1203e35293132c61f0be"; // TODO: hide later
 
+// handle journal entry input and analyze emotions
 submit.addEventListener("click", () => {
     let textIn = document.getElementById('textEntry').value;
     const fileIn = fileInput.files[0];
@@ -25,19 +28,13 @@ submit.addEventListener("click", () => {
     }
 });
 
-function seAnalysis (entry) { //TODO: CHANGE TO IMPORT THINGY LOOK AT YOUR GITHUB
-    const NLPCloudClient = require('nlpcloud');
-    const client = new NLPCloudClient(model, key, true);
-    
-    client.sentiment({
-        text: entry,
-        target: ''
-    }).then( (resp) => {
-        console.log(resp.data);
-    }).catch( (err) => {
-        console.error(err.response.status);
-        console.error(err.response.data.detail);
-    });
+async function seAnalysis (entry) {
+    try {
+        const response = await client.sentiment(entry);
+        console.log(response.data);
+    } catch (error) {
+        console.error("Error:", error.response ? error.response.data : error.message);
+    }
 }
 
 

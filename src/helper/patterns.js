@@ -12,6 +12,11 @@ function smoke() {
   }
 }
 
+function generatePalette(results) {
+
+}
+
+
 function getColour(noiseVal) {
     let colour;
     let p = [ color("#ffd670"),
