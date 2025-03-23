@@ -7,7 +7,6 @@ function setup() {
     let canvas = createCanvas( drawArea, drawArea );
     canvas.position( ( ( windowWidth - drawArea )/2 ), ( ( windowHeight - drawArea )/2 ) ); // center canvas
     setupFlowfield();
-    createParticles();
     //setupControls();
 }
 
@@ -15,10 +14,7 @@ function draw() {
     generateFlowfield();
     //showFlowfield();
     //stitchGrid();
-    //scales();
     smoke();
-    //followField();
-    //showParticles();
 }
 
 function stitchGrid() { // TODO: figure out how to make it stop repeating thingies
