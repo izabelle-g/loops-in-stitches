@@ -15,10 +15,3 @@ app.get( '/api', (req, res) => {
 app.listen( PORT, () => {
     console.log("Listening on port " + PORT);
 });
-
-// TODO: remove later: close server (for my purposes) after 10 seconds during testing
-setTimeout( () => {
-    server.close(() => {
-      console.log('Server stopped listening');
-    });
-  }, 10000 );
