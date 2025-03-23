@@ -6,7 +6,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000', // Make sure your backend is running on this port
+        target: process.env.NODE_ENV === 'production' 
+          ? 'https://loops-in-stitches.onrender.com/'
+          : 'http://localhost:8000',  // Local development
         changeOrigin: true,
         secure: false,
       },
