@@ -1,3 +1,3 @@
-### Loops In Stitches
+# Loops In Stitches
 
 For website: https://loops-in-stitches.onrender.com
