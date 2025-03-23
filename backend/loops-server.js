@@ -7,6 +7,9 @@ const app = express();
 const PORT = process.env.PORT;
 
 // TODO: change later: sample app routing for testing 
+app.get('/', (req, res) => {
+  res.send('Hello from the backend!');
+});
 app.get( '/api', (req, res) => {
     res.json( { message: "Hello from express" } );
 });

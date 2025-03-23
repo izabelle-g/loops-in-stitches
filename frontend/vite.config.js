@@ -7,7 +7,7 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: process.env.NODE_ENV === 'production' 
-          ? 'https://loops-in-stitches.onrender.com/api'
+          ? 'https://loops-in-stitches.onrender.com'
           : 'http://localhost:8000',  // Local development
         changeOrigin: true,
         secure: false,
