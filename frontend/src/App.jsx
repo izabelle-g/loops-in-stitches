@@ -1,5 +1,5 @@
-// frontend/src/App.jsx
 import React, { useEffect, useState } from 'react';
+import JournalInput from './components/JournalInput';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <h1>React + Express Full Stack App</h1>
+      <JournalInput></JournalInput>
       <p>{message}</p>
     </div>
   );
