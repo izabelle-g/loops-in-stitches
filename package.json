@@ -6,5 +6,9 @@
     "start": "concurrently \"npm run dev --prefix frontend\" \"npm run server\"",
     "dev": "vite --prefix frontend",
     "server": "node backend/loops-server.js"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^3.6.1",
+    "axios": "^1.8.4"
   }
 }

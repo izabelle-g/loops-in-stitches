@@ -1,16 +1,35 @@
 // import modules via require
 const express = require('express');
+const axios = require('axios');
 const path = require('path');
+const { HfInference } = require('@huggingface/inference');
 require('dotenv').config();
 
 // initialize express and port listen
 const app = express();
 const PORT = process.env.PORT;
 
-// TODO: change later: sample app routing for testing
+app.use(express.json());
+
+const hf = new HfInference(process.env.TESTKEY);
+
 // FYI, ORDER MATTERS
 app.get('/api', (req, res) => {
   res.json( { message: "Hello from express" } );
+});
+
+app.post('/api/analysis', async (req, res) => { // res goes back to frontend
+  const { text } = req.body; 
+
+  // debugging
+  if(!text) return res.status(400).json({ error: "No text provided" });
+
+  const response = await hf.textClassification({
+    model: 'j-hartmann/emotion-english-distilroberta-base',
+    inputs: text
+  });
+
+  console.log(response);
 });
 
 // Serve static files from the React app
