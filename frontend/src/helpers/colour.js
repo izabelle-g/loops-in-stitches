@@ -90,9 +90,9 @@ function genPalette(results) {
     }
 
     palettes.push(newPalette);
-  }
+}
   
-  function find(emo) {
+function find(emo) {
       for(let c of COL_MAP){
           let list = Object.getOwnPropertyNames(c);
           if(list[0] == emo){
@@ -100,9 +100,9 @@ function genPalette(results) {
             return emoteArray;
           }
       }
-  }
+}
   
-  function sortRes(result) {
+function sortRes(result) {
     let swapped = false;
     
     for(let i = 0; i < result.length; i++){
@@ -117,3 +117,49 @@ function genPalette(results) {
     }
     return result;
   }
+
+function hslToHex(h, s, l) {
+    let chroma, h1, x, match;
+    let r, g, b, r1, g1, b1;
+    let hex = '';
+
+    let sat = map(s, 0, 100, 0, 1);
+    let light = map(l, 0, 100, 0, 1);
+
+    chroma = ( 1 - Math.abs( (2 * light) - 1 ) ) * sat;
+    h1 = h / 60;
+    x = ( chroma * ( 1 - Math.abs( (h1 % 2) - 1 ) ) );
+    match = light - ( chroma / 2 );
+
+    if(0 <= h1 && h1 < 1) {
+      r1 = chroma;
+      g1 = x;
+      b1 = 0;
+    } else if(1 <= h1 && h1 < 2) {
+      r1 = x;
+      g1 = chroma;
+      b1 = 0;
+    } else if(2 <= h1 && h1 < 3) {
+      r1 = 0;
+      g1 = chroma;
+      b1 = x;
+    } else if(3 <= h1 && h1 < 4) {
+      r1 = 0;
+      g1 = x;
+      b1 = chroma;        
+    } else if(4 <= h1 && h1 < 5) {
+      r1 = x;
+      g1 = 0;
+      b1 = chroma;
+    } else if(5 <= h1 && h1 < 6) {
+      r1 = chroma;
+      g1 = 0;
+      b1 = x;     
+    } 
+  
+    r = round( (r1 + match) * 255 );
+    g = round( (g1 + match) * 255 );
+    b = round( (b1 + match) * 255 );
+  
+    return hex.concat(r.toString(16), g.toString(16), b.toString(16));
+}
