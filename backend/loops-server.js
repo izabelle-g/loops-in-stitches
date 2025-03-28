@@ -29,7 +29,7 @@ app.post('/api/analysis', async (req, res) => { // res goes back to frontend
     inputs: text
   });
 
-  console.log(response);
+  res.json({response});
 });
 
 // Serve static files from the React app

@@ -51,8 +51,7 @@ const JournalInput = () => {
             console.error("Error fetching sentiment:", err);
             setResult({ err: "Failed to analyze text" });
         }
-
-        console.log(result);
+        console.log(result); // for testing TODO: remove
     };
 
     return(
