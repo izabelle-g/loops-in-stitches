@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const JournalInput = () => {
+const JournalInput = (props) => {
     const [text, setText] = useState("");
     const [result, setResult] = useState(null);
     const [disableText, setDisableText] = useState(false);
@@ -46,12 +46,17 @@ const JournalInput = () => {
             if(!res.ok) throw new Error("Failed to perform analysis.");
 
             const data = await res.json();
-            setResult(data); // TODO: generate colour palette
+            setResult(data);
         } catch(err) {
             console.error("Error fetching sentiment:", err);
             setResult({ err: "Failed to analyze text" });
         }
-        console.log(result); // for testing TODO: remove
+
+        // generate colour palettes
+        for(let i = 0; i < NUM_PAL; i++) { genPalette(result) };
+
+        // change screen to canvas
+        props.update(e.target.name);
     };
 
     return(
@@ -66,7 +71,7 @@ const JournalInput = () => {
 
                 <h3>OR</h3>
                 <textarea name="textEntry" id="textEntry" placeholder="Enter journal entry here..." onChange={ handleText } disabled={ disableText }></textarea>
-                <button type="button" name="toSubmit" onClick={ analyze }>Submit Entry</button>
+                <button type="button" name="toCanvas" onClick={ analyze }>Submit Entry</button>
             </div>
         </div>
     )

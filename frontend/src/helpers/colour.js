@@ -43,6 +43,7 @@ const COL_MAP = [
 ];
 let palettes = []; // palettes to be used for pattern generation
 
+// TODO: Remove later on
 const test1 = [ 
     { label: 'fear', score: 0.9617002010345459 },
     { label: 'neutral', score: 0.011039502918720245 },
@@ -61,7 +62,7 @@ const test2 = [
     { label: 'neutral', score: 0.005764586851000786},
     { label: 'sadness', score: 0.002092392183840275},
     { label: 'surprise', score: 0.008528684265911579}
-  ];
+];
 
 function genPalette(results) {
     let newPalette = [];
@@ -116,7 +117,7 @@ function sortRes(result) {
       if(swapped === false) break;
     }
     return result;
-  }
+}
 
 function hslToHex(h, s, l) {
     let chroma, h1, x, match;
