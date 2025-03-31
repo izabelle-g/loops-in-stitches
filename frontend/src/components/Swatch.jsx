@@ -1,11 +1,8 @@
 const Swatch = (props) => {
     props.palette; // current chosen palette
 
-    // TODO: add svg element
     return(
-        <div>
-            
-        </div>
+        <img src="/src/assets/swatch.svg"></img> // TODO: change this colour dynamically
     )
 };
 

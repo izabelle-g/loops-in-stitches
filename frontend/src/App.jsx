@@ -4,12 +4,17 @@ import DesignArea from './components/DesignArea';
 
 function App() {
   const [screen, setScreen] = useState('toHome');
-  const [results, setResults] = useState(null);
+  const [palettes, setPalettes] = useState(null);
   const changeScreen = (page) => { setScreen(page) };
-  const getResults = (r) => { setResults(r) };
- 
-  if(screen == 'toHome') return <JournalInput update={ changeScreen } analysis={ getResults }/>;
-  else if(screen == 'toCanvas') return <DesignArea update={ changeScreen } analysis={ results }/>;
+  const test = [
+    ['#6f1dec', '#103466', '#f10dc3', '#916d1f', '#7e517a', '#b0fc26', '#36ae35', '#271e1a'],
+    ['#6f1dec', '#103466', '#f10dc3', '#916d1f', '#7e517a', '#b0fc26', '#36ae35', '#271e1a'],
+    ['#6f1dec', '#103466', '#f10dc3', '#916d1f', '#7e517a', '#b0fc26', '#36ae35', '#271e1a']
+  ];
+  const getPalettes = (p) => { setPalettes(p) };
+  
+  if(screen == 'toHome') return <JournalInput update={ changeScreen } analysis={ getPalettes }/>;
+  else if(screen == 'toCanvas') return <DesignArea update={ changeScreen } palettes={ test }/>;
   //else if(screen == 'toExport') return ;
 }
 

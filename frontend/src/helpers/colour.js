@@ -163,5 +163,5 @@ function hslToHex(h, s, l) {
     g = p5.prototype.round( (g1 + match) * 255 );
     b = p5.prototype.round( (b1 + match) * 255 );
   
-    return hex.concat(r.toString(16), g.toString(16), b.toString(16));
+    return hex.concat('#',r.toString(16), g.toString(16), b.toString(16));
 }

@@ -72,6 +72,7 @@ const JournalInput = (props) => {
                 <textarea name="textEntry" id="textEntry" placeholder="Enter journal entry here..." onChange={ handleText } disabled={ disableText }></textarea>
                 <br></br>
                 <button type="button" name="toCanvas" onClick={ analyze }>Submit Entry</button>
+                <button type="button" name="toCanvas" onClick={ (e) => {props.update(e.target.name)} }>Bypass</button>
             </div>
         </div>
     )

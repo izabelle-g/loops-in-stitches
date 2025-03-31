@@ -1,6 +1,5 @@
 // import modules via require
 const express = require('express');
-const axios = require('axios');
 const path = require('path');
 const { HfInference } = require('@huggingface/inference');
 require('dotenv').config();
@@ -19,6 +18,7 @@ app.get('/api', (req, res) => {
 });
 
 app.post('/api/analysis', async (req, res) => { // res goes back to frontend
+  // TODO: Jochen Hartmann, "Emotion English DistilRoBERTa-base". https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/, 2022.
   const { text } = req.body; 
 
   // debugging
