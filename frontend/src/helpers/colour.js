@@ -73,7 +73,7 @@ function genPalette(results) {
 
     // Divide the 8-colour palette based on percentage of results
     for(let r of results) {
-      let num = floor(r.score * NUM_COL);
+      let num = Math.floor(r.score * NUM_COL);
       
       for(let i = 0; i < num; i++) {
         if(comp.length < NUM_COL) comp.push(r);
@@ -82,11 +82,10 @@ function genPalette(results) {
     }
     
     // Create a palette based on results by randomizing pre-set values of colour-emotion association
-    colorMode(HSB);
     for(let i = 0; i < comp.length; i++){
         let sel = find(comp[i].label);
-        let rcol = random(sel);
-        let newCol = color(random(rcol.h), random(rcol.s), random(rcol.l));
+        let rcol = Math.random(sel);
+        let newCol = hslToHex(Math.random(rcol.h), Math.random(rcol.s), Math.random(rcol.l));
         newPalette.push(newCol);
     }
 

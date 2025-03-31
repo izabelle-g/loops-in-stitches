@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 const JournalInput = (props) => {
     const [text, setText] = useState("");
-    const [result, setResult] = useState(null);
     const [disableText, setDisableText] = useState(false);
     const [disableFile, setDisableFile] = useState(false);
 
@@ -31,7 +30,7 @@ const JournalInput = (props) => {
         }   else if(e.target.value == '') setDisableFile(false);
     };
 
-    const analyze = async () => {
+    const analyze = async (e) => {
         // ensure no empty requests are sent
         if(text === '') return;
 
@@ -46,17 +45,13 @@ const JournalInput = (props) => {
             if(!res.ok) throw new Error("Failed to perform analysis.");
 
             const data = await res.json();
-            setResult(data);
+            
+            // change screen to canvas
+            props.analysis(data.response);
+            props.update(e.target.name);
         } catch(err) {
             console.error("Error fetching sentiment:", err);
-            setResult({ err: "Failed to analyze text" });
         }
-
-        // generate colour palettes
-        for(let i = 0; i < NUM_PAL; i++) { genPalette(result) };
-
-        // change screen to canvas
-        props.update(e.target.name);
     };
 
     return(
