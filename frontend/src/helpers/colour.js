@@ -1,3 +1,5 @@
+import p5 from "p5";
+
 const NUM_COL = 8; // only 8 colours for each palette
 const NUM_PAL = 3; // only 3 palettes for each session
 const COL_MAP = [
@@ -73,7 +75,7 @@ function genPalette(results) {
 
     // Divide the 8-colour palette based on percentage of results
     for(let r of results) {
-      let num = Math.floor(r.score * NUM_COL);
+      let num = p5.prototype.floor(r.score * NUM_COL);
       
       for(let i = 0; i < num; i++) {
         if(comp.length < NUM_COL) comp.push(r);
@@ -84,8 +86,8 @@ function genPalette(results) {
     // Create a palette based on results by randomizing pre-set values of colour-emotion association
     for(let i = 0; i < comp.length; i++){
         let sel = find(comp[i].label);
-        let rcol = Math.random(sel);
-        let newCol = hslToHex(Math.random(rcol.h), Math.random(rcol.s), Math.random(rcol.l));
+        let rcol = p5.prototype.random(sel);
+        let newCol = hslToHex(p5.prototype.random(rcol.h), p5.prototype.random(rcol.s), p5.prototype.random(rcol.l));
         newPalette.push(newCol);
     }
 
@@ -123,8 +125,8 @@ function hslToHex(h, s, l) {
     let r, g, b, r1, g1, b1;
     let hex = '';
 
-    let sat = map(s, 0, 100, 0, 1);
-    let light = map(l, 0, 100, 0, 1);
+    let sat = p5.prototype.map(s, 0, 100, 0, 1);
+    let light = p5.prototype.map(l, 0, 100, 0, 1);
 
     chroma = ( 1 - Math.abs( (2 * light) - 1 ) ) * sat;
     h1 = h / 60;
@@ -157,9 +159,9 @@ function hslToHex(h, s, l) {
       b1 = x;     
     } 
   
-    r = round( (r1 + match) * 255 );
-    g = round( (g1 + match) * 255 );
-    b = round( (b1 + match) * 255 );
+    r = p5.prototype.round( (r1 + match) * 255 );
+    g = p5.prototype.round( (g1 + match) * 255 );
+    b = p5.prototype.round( (b1 + match) * 255 );
   
     return hex.concat(r.toString(16), g.toString(16), b.toString(16));
 }

@@ -4,12 +4,12 @@ import DesignArea from './components/DesignArea';
 
 function App() {
   const [screen, setScreen] = useState('toHome');
-  const [palettes, setPalettes] = useState(null);
+  const [results, setResults] = useState(null);
   const changeScreen = (page) => { setScreen(page) };
-  const getPalettes = (p) => { setPalettes(p) };
+  const getResults = (r) => { setResults(r) };
  
-  if(screen == 'toHome') return <JournalInput update={ changeScreen } palettes={ getPalettes }/>;
-  else if(screen == 'toCanvas') return <DesignArea update={ changeScreen } palettes={ palettes }/>;
+  if(screen == 'toHome') return <JournalInput update={ changeScreen } analysis={ getResults }/>;
+  else if(screen == 'toCanvas') return <DesignArea update={ changeScreen } analysis={ results }/>;
   //else if(screen == 'toExport') return ;
 }
 
