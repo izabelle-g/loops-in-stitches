@@ -1,8 +1,4 @@
 class Particle {
-    
-}
-
-/* class Particle {
     constructor(x, y) {
       this.pos = createVector(x, y);
       this.size = random(10, 40); // adjusts particle size
@@ -95,4 +91,4 @@ function followField() {
 
 function onScreen(p) {
     return p.x >= 0 && p.x <= width && p.y >= 0 && p.y <= height;
-} */
+} 

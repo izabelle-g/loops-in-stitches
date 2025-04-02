@@ -15,7 +15,7 @@ const PaletteArea = (props) => {
 
     return(
         <div>
-            <ul> {/* TODO: change to table because I want to keep them side by side not like */}
+            <ul>
                 { palette.map( (c, index) => {
                     return <li key={ index }><Swatch colour={c}/></li>
                 } ) }

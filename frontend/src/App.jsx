@@ -6,34 +6,11 @@ function App() {
   const [screen, setScreen] = useState('toHome');
   const [palettes, setPalettes] = useState(null);
   const changeScreen = (page) => { setScreen(page) };
-  const test = [
-    ['#6f1dec', '#103466', '#f10dc3', '#916d1f', '#7e517a', '#b0fc26', '#36ae35', '#271e1a'],
-    ['#6fbccc', '#10eef6', '#f12303', '#91ddff', '#7adbff', '#b99112', '#36ad35', '#2811ef'],
-    ['#6f1dec', '#103466', '#f10dc3', '#916d1f', '#7e517a', '#b0fc26', '#36ae35', '#271e1a']
-  ];
   const getPalettes = (p) => { setPalettes(p) };
   
-  if(screen == 'toHome') return <JournalInput update={ changeScreen } analysis={ getPalettes }/>;
-  else if(screen == 'toCanvas') return <DesignArea update={ changeScreen } palettes={ test }/>;
+  if(screen == 'toHome') return <JournalInput update={ changeScreen } palettes={ getPalettes }/>;
+  else if(screen == 'toCanvas') return <DesignArea update={ changeScreen } palettes={ palettes }/>;
   //else if(screen == 'toExport') return ;
 }
 
 export default App;
-
-/*
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    // Fetch data from the Express backend
-    fetch('/api')
-      .then((response) => response.json())
-      .then((data) => setMessage(data.message))
-      .catch((error) => console.error(error));
-  }, []);
-
-  // TODO: switch pages
-  return (
-    <div>
-      <p>{message}</p>
-    </div>
-  );*/
