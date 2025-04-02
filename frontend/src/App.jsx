@@ -13,6 +13,14 @@ function App() {
   const [screen, setScreen] = useState('toHome');
   const [palettes, setPalettes] = useState(null);
   const changeScreen = (page) => { setScreen(page) };
+<<<<<<< HEAD
+=======
+  const test = [
+    ['#6f1dec', '#103466', '#f10dc3', '#916d1f', '#7e517a', '#b0fc26', '#36ae35', '#271e1a'],
+    ['#6f1dec', '#103466', '#f10dc3', '#916d1f', '#7e517a', '#b0fc26', '#36ae35', '#271e1a'],
+    ['#6f1dec', '#103466', '#f10dc3', '#916d1f', '#7e517a', '#b0fc26', '#36ae35', '#271e1a']
+  ];
+>>>>>>> parent of 48a3ca2 (Palette switching test done)
   const getPalettes = (p) => { setPalettes(p) };
   
   if(screen == 'toHome') return <JournalInput update={ changeScreen } analysis={ getPalettes }/>;
