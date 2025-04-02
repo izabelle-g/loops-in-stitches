@@ -10,8 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@huggingface/inference": "^3.6.2",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "nlpcloud": "^2.0.8"
+    "express": "^5.1.0",
+    "path": "^0.12.7"
   }
 }

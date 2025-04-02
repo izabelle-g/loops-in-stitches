@@ -45,7 +45,7 @@ const COL_MAP = [
 ];
 let palettes = []; // palettes to be used for pattern generation
 
-// TODO: Remove later on
+// for testing
 const test1 = [ 
     { label: 'fear', score: 0.9617002010345459 },
     { label: 'neutral', score: 0.011039502918720245 },

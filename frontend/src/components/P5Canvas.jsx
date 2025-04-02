@@ -22,19 +22,7 @@ const P5Canvas = (props) => {
                 p.createCanvas(drawArea, drawArea).parent(canvasRef.current);
             };
             p.draw = () => {
-                p.background(255);
-                let x = 0;
-                let y = 0;
-                let w = 40;
-                let h = 40;
-
-                for(let c of palettes[props.curPalette]){ 
-                    p.noStroke();
-                    p.fill(c);
-                    p.rect(x, y, w, h);
-                    x += w;
-                    y += h;
-                  }
+                paletteTest(palettes);
             };
         };
 
@@ -70,3 +58,19 @@ export default P5Canvas;
         }
     }
 } */
+
+function paletteTest(palettes) {
+    p.background(255);
+                let x = 0;
+                let y = 0;
+                let w = 40;
+                let h = 40;
+
+                for(let c of palettes[props.curPalette]){ 
+                    p.noStroke();
+                    p.fill(c);
+                    p.rect(x, y, w, h);
+                    x += w;
+                    y += h;
+                  }
+}

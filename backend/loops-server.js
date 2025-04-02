@@ -1,4 +1,3 @@
-// import modules via require
 const express = require('express');
 const path = require('path');
 const { HfInference } = require('@huggingface/inference');
