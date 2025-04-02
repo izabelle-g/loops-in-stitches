@@ -1,19 +1,20 @@
 import P5Canvas from "./P5Canvas";
-import PaletteArea from "./PaletteArea"
-import { useState } from "react";
 
 const DesignArea = (props) => {
-    const [curPalette, setCurPalette] = useState('0');
-    const getCurPalette = (e) => { setCurPalette(curPalette) };
-    const handleClick = (e) => { props.update(e.target.name) };
+    const handleBack = (e) => { props.update(e.target.name) };
+    const handleExport = () => {
+
+    };
 
     return(
-        <div>
-            <P5Canvas palettes={props.palettes} curPalette={ curPalette } />
-            {/*<PaletteArea palettes={props.palettes} curPalette={ getCurPalette } />*/}
+        <div className="designArea">            
+            <P5Canvas palettes={props.palettes} emotion={props.emotion}/>
             <br></br>
-            <button type="button" name="toHome" onClick={ handleClick }>Back</button>
-            <button type="button" name="toExport" onClick={ handleClick }>Export</button>
+
+            <div className='buttons'>
+              <button type="button" name="toHome" className="btnBack" onClick={ handleBack }>Back</button>
+              <button type="button" name="toExport" className="btnExport" onClick={ handleExport }>Export</button>
+            </div>
         </div>
     )
 }

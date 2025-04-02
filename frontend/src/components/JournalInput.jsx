@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
+import p5 from 'p5';
 
 const NUM_PAL = 3; // only 3 palettes for each session
-const NUM_COL = 8; // only 8 colours for each palette
+const NUM_COL = 6; // only 5 main colours for each palette, 6th is only used for harmony
 const COL_MAP = [
     { fear: [
         { h: [0, 359], s: [0, 10], l: [0, 20] }, // black
         { h: [0, 359], s: [0, 10], l: [30, 80] }, // gray
         { h: [0, 15], s: [80, 100], l: [50, 80] }, // red
-        { h: [260, 280], s: [60, 100], l: [60, 80] }, // purple
+        { h: [260, 280], s: [50, 70], l: [30, 80] }, // purple
     ] },
     { neutral: [
         { h: [0, 359], s: [0, 10], l: [80, 100] }, // white
@@ -16,7 +17,7 @@ const COL_MAP = [
         { h: [170, 190], s: [30, 80], l: [85, 95] }, // turquiose
     ] },
     { sadness: [
-        { h: [0, 359], s: [0, 10], l: [20, 30] }, // black
+        //{ h: [0, 359], s: [0, 10], l: [20, 30] }, // black
         { h: [0, 359], s: [0, 10], l: [30, 80] }, // gray
         { h: [200, 240], s: [60, 100], l: [50, 70] }, // blue
     ] },
@@ -34,13 +35,13 @@ const COL_MAP = [
         { h: [0, 15], s: [80, 100], l: [50, 80] }, // red
     ] },
     { joy: [
-        { h: [45, 60], s: [30, 80], l: [95, 100] }, // yellow
-        { h: [20, 40], s: [30, 80], l: [95, 100] }, // orange
-        { h: [290, 335], s: [20, 75], l: [95, 100] }, // pink
+        { h: [45, 60], s: [40, 80], l: [80, 90] }, // yellow
+        { h: [20, 40], s: [40, 80], l: [85, 90] }, // orange
+        { h: [290, 335], s: [30, 75], l: [85, 90] }, // pink
         { h: [0, 15], s: [80, 100], l: [80, 95] }, // red
-        { h: [260, 280], s: [30, 60], l: [80, 100] }, // purple
-        { h: [90, 130], s: [20, 45], l: [80, 100] }, // green
-        { h: [170, 190], s: [40, 80], l: [85, 95] }, // turquiose
+        { h: [260, 280], s: [40, 60], l: [80, 90] }, // purple
+        //{ h: [90, 130], s: [30, 45], l: [80, 90] }, // green
+        { h: [170, 190], s: [50, 80], l: [85, 95] }, // turquiose
     ] },
 ];
 
@@ -97,6 +98,7 @@ const JournalInput = (props) => {
                 newPalettes.push(genPalette(data.response));
             }
 
+            props.emotion( sortRes( data.response)[0].label );
             props.palettes(newPalettes);
             props.update(e.target.name);
         } catch(err) {
@@ -106,22 +108,21 @@ const JournalInput = (props) => {
     };
 
     return(
-        <div className="input-container">
+        <div className>
             <div className="logo-banner">
-                TODO: insert custom logo banner here
+                <h1>Loops <small>in</small> <i>Stitches</i></h1>
             </div>
 
             <div className="input-area">
-                <label htmlFor="txtfile">Select a text file to upload:</label>
-                <br></br>
+                <label htmlFor="txtfile">Select a text file to upload:   </label>
                 <input type="file" id="txtfile" name="txtfile" accept=".txt" onChange={ fileToString } disabled={ disableFile }></input>
 
                 <h3>OR</h3>
                 <br></br>
                 <textarea name="textEntry" id="textEntry" placeholder="Enter journal entry here..." onChange={ handleText } disabled={ disableText }></textarea>
                 <br></br>
-                <button type="button" name="toCanvas" onClick={ analyze }>Submit Entry</button>
-                <button type="button" name="toCanvas" onClick={ (e) => {props.update(e.target.name)} }>Bypass</button>
+                <button type="button" name="toCanvas" className="btnSubmit" onClick={ analyze }>Submit Entry</button>
+                {/*<button type="button" name="toCanvas" onClick={ (e) => {props.update(e.target.name)} }>Bypass</button>*/}
             </div>
         </div>
     )
@@ -130,7 +131,7 @@ const JournalInput = (props) => {
 export default JournalInput;
 
 function genPalette(results) {
-    let newPalette = [];
+    let mainColours = [];
     let comp = [];
 
     // Sort results in decreasing order of score
@@ -154,10 +155,10 @@ function genPalette(results) {
         let s = p5.prototype.random(rcol.s);
         let l = p5.prototype.random(rcol.l);
         let newCol = hslToHex( h, s, l );
-        newPalette.push(newCol);
+        mainColours.push(newCol);
     }
 
-    return newPalette;
+    return mainColours;
 }
   
 function find(emo) {

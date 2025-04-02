@@ -1,11 +1,18 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --text-colour: #1A338E;
+  --orange-colour: #FF744A;
+  --pink-colour: #FFA2B4;
+  --yellow-colour: #E0C53B;
+  --green-colour: #1FAB6A;
+  --blue-colour: #4E6EE8;
+
+  font-family: "Pixelify Sans", sans-serif, "Jacquarda Bastarda 9", serif;;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: url("src/assets/aida.jpg");
+  color: var(--text-colour);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,15 +22,6 @@
 
 li{
   list-style-type: none;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
@@ -40,38 +38,111 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: var(--text-colour);
   text-align: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
-  border-radius: 8px;
+  border-radius: 40px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--blue-colour);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: var(--pink-colour);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.input-container {
-  display: block;
-  align-items: center;
+.input-area {
+  justify-content: center;
+}
+
+.input-area h3 {
+  color: var(--text-colour);
+  font-size: 2em;
   text-align: center;
+}
+
+.input-area label {
+  font-size: 1.2em;
+}
+
+.input-area textarea{
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1em;
+  color: var(--text-colour);
+  background-color: white;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border: 2px solid var(--blue-colour);
+  border-radius: 5px;
+  width: 30em;
+  height: 250px;
+  resize: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-area button {
+  display: block;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-area #txtfile {
+  margin: 20px;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.logo-banner h1 {
+  text-align: center;
+  font-size: 4em;
+  color: var(--blue-colour);
+}
+
+.logo-banner i {
+  font-family: "Jacquarda Bastarda 9", serif;
+  color: var(--green-colour);
+}
+
+.logo-banner small {
+  font-size: .7em;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--orange-colour);
+}
+
+.designArea {
+  width: 100%;
+}
+
+.canvas p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.buttons {
+  justify-self: center;
+  margin-bottom: auto;
+}
+
+.buttons .btnExport {
+  margin-left: 20px;
+  width: 100px;
+}
+
+.buttons .btnBack {
+  width: 100px;
 }
 
 @media (prefers-color-scheme: light) {
