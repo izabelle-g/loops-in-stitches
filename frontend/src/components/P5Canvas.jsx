@@ -13,11 +13,13 @@ let fGrid = 14;
 let flowfield = [];
 let zInc;
 let drawArea = fGrid * 43;
+let isLoop = true;
 
 const P5Canvas = (props) => {
     const [num, setNum] = useState(0);
     const [curPalette, setCurPalette] = useState(props.palettes[0]);
     const [palette, setPalette] = useState(curPalette);
+    //const [isLoop, setLoop] = useState(true);
     const handleClick = (e) => {
         if(e.target.name == "palette1") setNum(0);
         else if(e.target.name == "palette2") setNum(1);
@@ -25,8 +27,14 @@ const P5Canvas = (props) => {
         setCurPalette(props.palettes[num]);
     };
 
-    const aida = [ 11, 14, 16, 18, 20, 22, 25, 28, 32 ]; // aida fabric count sizes
     const size = 4; // size of piece in inches in real life
+    const patterns = [
+        { name: 'smoke', controls: [ { type: 'playback', btn1: '&#9205;', btn2: '&#9208;' },
+                                     { type: 'speed', inc: 0, min: 0, max: 0 },
+                                     { type: 'zoom', inc: 0, min: 0, max: 0 },
+                                     { type: 'angle', inc: 0, min: 0, max: 0 }
+                                    ] },
+    ];
     const canvasRef = useRef();
 
     useEffect(() => { 
@@ -45,24 +53,14 @@ const P5Canvas = (props) => {
                         else temp.push( midColour( curPalette[i], curPalette[i + 1], p) );
                     }
                     setPalette(temp);
+                    props.threads(temp);
                 }
             };
             p.draw = () => {
-                generateFlowfield(p);
-                //showFlowfield(p);
+                generateFlowfield(p, 1, 1);
                 
-                p.background(255);
-                zInc = 0.0002;
-                for(let f of flowfield) {
-                    let n = p.noise( f[0].x, f[0].y, zoff );
-                    let index = p.floor( p.map( n, 0, 1, 0, palette.length - 1, true) );
-                    p.push();
-                    p.noStroke();
-                    p.translate( f[1] * fGrid+fGrid, f[2] * fGrid+fGrid/2 );
-                    p.fill( p.color(palette[ index ]) );
-                    p.rect( f[0].x - fGrid, f[0].y - ( fGrid / 2 ), fGrid, fGrid );
-                    p.pop();
-                }
+                //showFlowfield(p);
+                smoke(p, palette);
             };
         };
 
@@ -70,7 +68,7 @@ const P5Canvas = (props) => {
         return () => p5sketch.remove();
      }, [ curPalette ] );
     return (
-        <div>
+        <div className='canvas-container'>
             <div className='palette'>
                 <ul>
                     { palette.map( (c, index) => {
@@ -87,12 +85,38 @@ const P5Canvas = (props) => {
                 <p>{ props.emotion }</p>
                 <div ref={ canvasRef }></div>
             </div>
+
+            <div className='controls'>
+                <div className='patternSelector'>
+                    <button type="button" name="prevPattern" id='prevPattern' onClick={ '' }>&#9204;</button>
+                    <p>{ /*TODO: curPattern*/ }</p>
+                    <button type="button" name="nextPattern" id='nextPattern' onClick={ '' }>&#9205;</button>
+                </div>
+                <div className='stitchGrid'>
+                    <button type="button" name="grid" id='grid' onClick={ '' }>&#8862;</button>
+                </div>
+                <div className='ctaida'>
+                    <label for='aida'>aida ct: </label>
+                    <select name='aida' id='aida'>
+                        <option value='7'>7</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='14'>14</option>
+                        <option value='16'>16</option>
+                        <option value='18'>18</option>
+                        <option value='20'>20</option>
+                    </select>
+                </div>
+            </div>
         </div>
     )
 };
 
 export default P5Canvas;
 
+
+/*************** CONTROLS **************/
 function stitchGrid() { // TODO: figure out how to make it stop repeating thingies maybe use create image
     background(255);
     let iGrid = drawArea / inches;
@@ -118,14 +142,15 @@ function stitchGrid() { // TODO: figure out how to make it stop repeating thingi
     }
 } 
 
+/*************** FLOWFIELD **************/
 function setupFlowfield() {
     cells = p5.prototype.floor( drawArea / fGrid );
     flowfield = new Array( cells * cells );
 }
 
-function generateFlowfield(p) {
-    let inc = 0.02; // TODO: add zoom control
-    //let zInc = 0.0005 * spdSlider.value(); 
+function generateFlowfield(p, speed, ang) {
+    let inc = 0.02;
+    let zInc = 0.0005 * speed; 
     zInc = 0.0004;
     let yoff = 0;
 
@@ -134,7 +159,7 @@ function generateFlowfield(p) {
         for( let x = 0; x < cells; x++ ){
             let index = x + y * cells;
             let n = p.noise(xoff, yoff, zoff);
-            let angle = n * p.TAU * 1; // TODO: add cells(?) control, in code, it changes the angle of the vector
+            let angle = n * p.TAU * ang;
             let v = p5.Vector.fromAngle(angle);
 
             xoff += inc;
@@ -161,21 +186,26 @@ function showFlowfield(p) {
     }
 }
 
-function smoke(p) {
-    p.background(255);
-    zInc = 0.0009;
-    for(let f of flowfield) {
-      let n = p.noise( f[0].x, f[0].y, zoff );
-      p.push();
-      p.noStroke();
-      p.translate( f[1] * fGrid+fGrid, f[2] * fGrid+fGrid/2 );
-      p.fill( getColour(n, p) );
-      p.rect( f[0].x, f[0].y, fGrid, fGrid );
-      p.pop();
-    }
-}
 
+/*************** COLOUR BLEND **************/
 function midColour(c1, c2, p){
     let mid = p.lerpColor( p.color(c1), p.color(c2), 0.5);
     return mid.toString("#rrggbb");
+}
+
+
+/*************** PATTERNS **************/
+function smoke(p, palette) {
+    p.background(255);  
+    zInc = 0.0002;
+    for(let f of flowfield) {
+        let n = p.noise( f[0].x, f[0].y, zoff );
+        let index = p.floor( p.map( n, 0, 1, 0, palette.length - 1, true) );
+        p.push();
+        p.noStroke();
+        p.translate( f[1] * fGrid+fGrid, f[2] * fGrid+fGrid/2 );
+        p.fill( p.color(palette[ index ]) );
+        p.rect( f[0].x - fGrid, f[0].y - ( fGrid / 2 ), fGrid, fGrid );
+        p.pop();
+    }
 }

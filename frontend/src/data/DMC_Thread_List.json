@@ -1,0 +1,2547 @@
+[
+    {
+        "Code": "Ecru",
+        "Name": "Ecru/off-white",
+        "Colour": "#FFF7E7"
+    },
+    {
+        "Code": "Blanc",
+        "Name": "White",
+        "Colour": "#FCFCFF"
+    },
+    {
+        "Code": "White",
+        "Name": "White",
+        "Colour": "#FCFCFF"
+    },
+    {
+        "Code": "B5200",
+        "Name": "Snow White",
+        "Colour": "#FFFFFF"
+    },
+    {
+        "Code": "1",
+        "Name": "White Tin",
+        "Colour": "#EFEEF0"
+    },
+    {
+        "Code": "2",
+        "Name": "Tin",
+        "Colour": "#C5C4C9"
+    },
+    {
+        "Code": "3",
+        "Name": "Tin - Medium",
+        "Colour": "#B0B0B5"
+    },
+    {
+        "Code": "4",
+        "Name": "Tin - Dark",
+        "Colour": "#9C9B9D"
+    },
+    {
+        "Code": "5",
+        "Name": "Driftwood - Light",
+        "Colour": "#E3CCBE"
+    },
+    {
+        "Code": "6",
+        "Name": "Driftwood - Medium Light",
+        "Colour": "#DCC6B8"
+    },
+    {
+        "Code": "7",
+        "Name": "Driftwood",
+        "Colour": "#CCB8AA"
+    },
+    {
+        "Code": "8",
+        "Name": "Driftwood - Dark",
+        "Colour": "#9D7D71"
+    },
+    {
+        "Code": "9",
+        "Name": "Cocoa - Very Dark",
+        "Colour": "#552014"
+    },
+    {
+        "Code": "10",
+        "Name": "Tender Green - Very Light",
+        "Colour": "#EDFED9"
+    },
+    {
+        "Code": "11",
+        "Name": "Tender Green - Light",
+        "Colour": "#E2EDB5"
+    },
+    {
+        "Code": "12",
+        "Name": "Tender Green",
+        "Colour": "#CDD99A"
+    },
+    {
+        "Code": "13",
+        "Name": "Nile Green - Medium Light",
+        "Colour": "#BFF6E0"
+    },
+    {
+        "Code": "14",
+        "Name": "Apple Green - Pale",
+        "Colour": "#D0FBB2"
+    },
+    {
+        "Code": "15",
+        "Name": "Apple Green",
+        "Colour": "#D1EDA4"
+    },
+    {
+        "Code": "16",
+        "Name": "Chartreuse - Light",
+        "Colour": "#A4D67C"
+    },
+    {
+        "Code": "17",
+        "Name": "Yellow Plum - Light",
+        "Colour": "#E5E272"
+    },
+    {
+        "Code": "18",
+        "Name": "Yellow Plum",
+        "Colour": "#D9D56D"
+    },
+    {
+        "Code": "19",
+        "Name": "Autumn Gold - Medium Light",
+        "Colour": "#F7C95F"
+    },
+    {
+        "Code": "20",
+        "Name": "Shrimp",
+        "Colour": "#F7AF93"
+    },
+    {
+        "Code": "21",
+        "Name": "Alizarian - Light",
+        "Colour": "#D79982"
+    },
+    {
+        "Code": "22",
+        "Name": "Alizarian",
+        "Colour": "#BC604E"
+    },
+    {
+        "Code": "23",
+        "Name": "Apple Blossom",
+        "Colour": "#EDE2ED"
+    },
+    {
+        "Code": "24",
+        "Name": "White Lavender",
+        "Colour": "#E0D7EE"
+    },
+    {
+        "Code": "25",
+        "Name": "Lavender - Ultra Light",
+        "Colour": "#DAD2E9"
+    },
+    {
+        "Code": "26",
+        "Name": "Lavender - Pale",
+        "Colour": "#CFC8DE"
+    },
+    {
+        "Code": "27",
+        "Name": "White Violet",
+        "Colour": "#E9ECFC"
+    },
+    {
+        "Code": "28",
+        "Name": "Eggplant - Medium Light",
+        "Colour": "#7D4E92"
+    },
+    {
+        "Code": "29",
+        "Name": "Eggplant",
+        "Colour": "#674076"
+    },
+    {
+        "Code": "30",
+        "Name": "Blueberry - Medium Light",
+        "Colour": "#6D54D3"
+    },
+    {
+        "Code": "31",
+        "Name": "Blueberry",
+        "Colour": "#5834A3"
+    },
+    {
+        "Code": "32",
+        "Name": "Blueberry - Dark",
+        "Colour": "#4D2E8A"
+    },
+    {
+        "Code": "33",
+        "Name": "Fuchsia",
+        "Colour": "#D9539F"
+    },
+    {
+        "Code": "34",
+        "Name": "Fuchsia - Dark",
+        "Colour": "#AE4280"
+    },
+    {
+        "Code": "35",
+        "Name": "Fuchsia - Very Dark",
+        "Colour": "#732B55"
+    },
+    {
+        "Code": "150",
+        "Name": "Red - Bright",
+        "Colour": "#CF0053"
+    },
+    {
+        "Code": "151",
+        "Name": "Pink",
+        "Colour": "#FFCBD7"
+    },
+    {
+        "Code": "152",
+        "Name": "Tawny - Dark",
+        "Colour": "#E1A1A1"
+    },
+    {
+        "Code": "153",
+        "Name": "Lilac",
+        "Colour": "#EAC5EB"
+    },
+    {
+        "Code": "154",
+        "Name": "Red - Very Dark",
+        "Colour": "#4B233A"
+    },
+    {
+        "Code": "155",
+        "Name": "Forget-me-not Blue",
+        "Colour": "#9774B6"
+    },
+    {
+        "Code": "156",
+        "Name": "Blue - Medium",
+        "Colour": "#8577B4"
+    },
+    {
+        "Code": "157",
+        "Name": "Blue - Light",
+        "Colour": "#B5B8EA"
+    },
+    {
+        "Code": "158",
+        "Name": "Blue - Dark",
+        "Colour": "#393068"
+    },
+    {
+        "Code": "159",
+        "Name": "Petrol Blue - Light",
+        "Colour": "#BCB5DE"
+    },
+    {
+        "Code": "160",
+        "Name": "Petrol Blue - Medium",
+        "Colour": "#8178A9"
+    },
+    {
+        "Code": "161",
+        "Name": "Petrol Blue - Dark",
+        "Colour": "#60568B"
+    },
+    {
+        "Code": "162",
+        "Name": "Baby Blue - Light",
+        "Colour": "#CAE7F0"
+    },
+    {
+        "Code": "163",
+        "Name": "Green",
+        "Colour": "#557A60"
+    },
+    {
+        "Code": "164",
+        "Name": "Green - Light",
+        "Colour": "#BAE4B6"
+    },
+    {
+        "Code": "165",
+        "Name": "Green - Bright",
+        "Colour": "#E1F477"
+    },
+    {
+        "Code": "166",
+        "Name": "Lime Green",
+        "Colour": "#ADC238"
+    },
+    {
+        "Code": "167",
+        "Name": "Khaki Brown",
+        "Colour": "#855D31"
+    },
+    {
+        "Code": "168",
+        "Name": "Silver Gray",
+        "Colour": "#B1AEB7"
+    },
+    {
+        "Code": "169",
+        "Name": "Pewter Gray",
+        "Colour": "#827D7D"
+    },
+    {
+        "Code": "208",
+        "Name": "Lavender - Very Dark",
+        "Colour": "#9442A7"
+    },
+    {
+        "Code": "209",
+        "Name": "Lavender - Dark",
+        "Colour": "#BA72C6"
+    },
+    {
+        "Code": "210",
+        "Name": "Lavender - Medium",
+        "Colour": "#D49FE1"
+    },
+    {
+        "Code": "211",
+        "Name": "Lavender - Light",
+        "Colour": "#E5BDED"
+    },
+    {
+        "Code": "221",
+        "Name": "Shell Pink - Very Dark",
+        "Colour": "#792631"
+    },
+    {
+        "Code": "223",
+        "Name": "Shell Pink - Light",
+        "Colour": "#BB6864"
+    },
+    {
+        "Code": "224",
+        "Name": "Shell Pink - Very Light",
+        "Colour": "#E2A598"
+    },
+    {
+        "Code": "225",
+        "Name": "Shell Pink - Ultra Very Light",
+        "Colour": "#F8D9CD"
+    },
+    {
+        "Code": "300",
+        "Name": "Mahogany - Very Dark",
+        "Colour": "#6C3116"
+    },
+    {
+        "Code": "301",
+        "Name": "Mahogany - Medium",
+        "Colour": "#AA5237"
+    },
+    {
+        "Code": "304",
+        "Name": "Red - Medium",
+        "Colour": "#A10C39"
+    },
+    {
+        "Code": "307",
+        "Name": "Lemon",
+        "Colour": "#FDE949"
+    },
+    {
+        "Code": "309",
+        "Name": "Rose - Dark",
+        "Colour": "#BA2044"
+    },
+    {
+        "Code": "310",
+        "Name": "Black",
+        "Colour": "#000000"
+    },
+    {
+        "Code": "311",
+        "Name": "Blue - Medium",
+        "Colour": "#002A64"
+    },
+    {
+        "Code": "312",
+        "Name": "Baby Blue - Very Dark",
+        "Colour": "#1F3279"
+    },
+    {
+        "Code": "315",
+        "Name": "Antique Mauve - Medium Dark",
+        "Colour": "#7D4246"
+    },
+    {
+        "Code": "316",
+        "Name": "Antique Mauve - Medium",
+        "Colour": "#BC757F"
+    },
+    {
+        "Code": "317",
+        "Name": "Pewter Gray",
+        "Colour": "#6D6469"
+    },
+    {
+        "Code": "318",
+        "Name": "Steel Gray - Light",
+        "Colour": "#999B9D"
+    },
+    {
+        "Code": "319",
+        "Name": "Pistachio Green - Very Dark",
+        "Colour": "#3A553B"
+    },
+    {
+        "Code": "320",
+        "Name": "Pistachio Green - Medium",
+        "Colour": "#608C59"
+    },
+    {
+        "Code": "321",
+        "Name": "Red",
+        "Colour": "#BD1136"
+    },
+    {
+        "Code": "322",
+        "Name": "Baby Blue",
+        "Colour": "#3A609D"
+    },
+    {
+        "Code": "326",
+        "Name": "Rose - Very Dark",
+        "Colour": "#AC1C37"
+    },
+    {
+        "Code": "327",
+        "Name": "Violet",
+        "Colour": "#5E0F77"
+    },
+    {
+        "Code": "333",
+        "Name": "Blue Violet - Very Dark",
+        "Colour": "#6E2E9B"
+    },
+    {
+        "Code": "334",
+        "Name": "Baby Blue - Medium",
+        "Colour": "#6085B8"
+    },
+    {
+        "Code": "335",
+        "Name": "Rose",
+        "Colour": "#D63D57"
+    },
+    {
+        "Code": "336",
+        "Name": "Blue",
+        "Colour": "#0C275E"
+    },
+    {
+        "Code": "340",
+        "Name": "Blue Violet - Medium",
+        "Colour": "#996DC3"
+    },
+    {
+        "Code": "341",
+        "Name": "Blue Violet - Light",
+        "Colour": "#A39AD7"
+    },
+    {
+        "Code": "347",
+        "Name": "Salmon - Very Dark",
+        "Colour": "#AB1B33"
+    },
+    {
+        "Code": "349",
+        "Name": "Coral - Dark",
+        "Colour": "#C62C38"
+    },
+    {
+        "Code": "350",
+        "Name": "Coral - Medium",
+        "Colour": "#DE3F40"
+    },
+    {
+        "Code": "351",
+        "Name": "Coral",
+        "Colour": "#ED625B"
+    },
+    {
+        "Code": "352",
+        "Name": "Coral - Light",
+        "Colour": "#F78372"
+    },
+    {
+        "Code": "353",
+        "Name": "Peach",
+        "Colour": "#FDB4A1"
+    },
+    {
+        "Code": "355",
+        "Name": "Terra Cotta - Dark",
+        "Colour": "#97382B"
+    },
+    {
+        "Code": "356",
+        "Name": "Terra Cotta - Medium",
+        "Colour": "#BE5C4B"
+    },
+    {
+        "Code": "367",
+        "Name": "Pistachio Green - Dark",
+        "Colour": "#446B45"
+    },
+    {
+        "Code": "368",
+        "Name": "Pistachio Green - Light",
+        "Colour": "#7FC66D"
+    },
+    {
+        "Code": "369",
+        "Name": "Pistachio Green - Very Light",
+        "Colour": "#CDEFA6"
+    },
+    {
+        "Code": "370",
+        "Name": "Mustard - Medium",
+        "Colour": "#917245"
+    },
+    {
+        "Code": "371",
+        "Name": "Mustard",
+        "Colour": "#9F8352"
+    },
+    {
+        "Code": "372",
+        "Name": "Mustard - Light",
+        "Colour": "#AD9564"
+    },
+    {
+        "Code": "400",
+        "Name": "Mahogany - Dark",
+        "Colour": "#813718"
+    },
+    {
+        "Code": "402",
+        "Name": "Mahogany - Very Light",
+        "Colour": "#EF9E74"
+    },
+    {
+        "Code": "407",
+        "Name": "Desert Sand - Dark",
+        "Colour": "#B77159"
+    },
+    {
+        "Code": "413",
+        "Name": "Pewter Gray - Dark",
+        "Colour": "#4A4749"
+    },
+    {
+        "Code": "414",
+        "Name": "Steel Gray - Dark",
+        "Colour": "#766E72"
+    },
+    {
+        "Code": "415",
+        "Name": "Pearl Gray",
+        "Colour": "#B8B9BD"
+    },
+    {
+        "Code": "420",
+        "Name": "Hazelnut Brown - Dark",
+        "Colour": "#855A30"
+    },
+    {
+        "Code": "422",
+        "Name": "Hazelnut Brown - Light",
+        "Colour": "#C99A67"
+    },
+    {
+        "Code": "433",
+        "Name": "Brown - Medium",
+        "Colour": "#73421E"
+    },
+    {
+        "Code": "434",
+        "Name": "Brown - Light",
+        "Colour": "#8F5332"
+    },
+    {
+        "Code": "435",
+        "Name": "Brown - Very Light",
+        "Colour": "#A96538"
+    },
+    {
+        "Code": "436",
+        "Name": "Tan",
+        "Colour": "#C78559"
+    },
+    {
+        "Code": "437",
+        "Name": "Tan - Light",
+        "Colour": "#DAA26F"
+    },
+    {
+        "Code": "444",
+        "Name": "Lemon - Dark",
+        "Colour": "#F5BC13"
+    },
+    {
+        "Code": "445",
+        "Name": "Lemon - Light",
+        "Colour": "#FCF999"
+    },
+    {
+        "Code": "451",
+        "Name": "Shell Gray - Dark",
+        "Colour": "#887773"
+    },
+    {
+        "Code": "452",
+        "Name": "Shell Gray - Medium",
+        "Colour": "#AD9994"
+    },
+    {
+        "Code": "453",
+        "Name": "Shell Gray - Light",
+        "Colour": "#CCB8AA"
+    },
+    {
+        "Code": "469",
+        "Name": "Avocado Green",
+        "Colour": "#5B6533"
+    },
+    {
+        "Code": "470",
+        "Name": "Avocado Green - Light",
+        "Colour": "#72813E"
+    },
+    {
+        "Code": "471",
+        "Name": "Avocado Green - Very Light",
+        "Colour": "#9EB357"
+    },
+    {
+        "Code": "472",
+        "Name": "Avocado Green - Ultra Light",
+        "Colour": "#D1DE75"
+    },
+    {
+        "Code": "498",
+        "Name": "Red - Dark",
+        "Colour": "#970B2C"
+    },
+    {
+        "Code": "500",
+        "Name": "Blue Green - Very Dark",
+        "Colour": "#1D362A"
+    },
+    {
+        "Code": "501",
+        "Name": "Blue Green - Dark",
+        "Colour": "#2F5446"
+    },
+    {
+        "Code": "502",
+        "Name": "Blue Green",
+        "Colour": "#57826E"
+    },
+    {
+        "Code": "503",
+        "Name": "Blue Green - Medium",
+        "Colour": "#89B89F"
+    },
+    {
+        "Code": "504",
+        "Name": "Blue Green - Very Light",
+        "Colour": "#ACDAC1"
+    },
+    {
+        "Code": "505",
+        "Name": "Grass Green - Dark",
+        "Colour": "#338362"
+    },
+    {
+        "Code": "517",
+        "Name": "Wedgewood - Dark",
+        "Colour": "#216285"
+    },
+    {
+        "Code": "518",
+        "Name": "Wedgewood - Light",
+        "Colour": "#50819C"
+    },
+    {
+        "Code": "519",
+        "Name": "Sky Blue",
+        "Colour": "#94B7CB"
+    },
+    {
+        "Code": "520",
+        "Name": "Fern Green - Dark",
+        "Colour": "#384526"
+    },
+    {
+        "Code": "522",
+        "Name": "Fern Green",
+        "Colour": "#808B6E"
+    },
+    {
+        "Code": "523",
+        "Name": "Fern Green - Light",
+        "Colour": "#959F7A"
+    },
+    {
+        "Code": "524",
+        "Name": "Fern Green - Very Light",
+        "Colour": "#AEA78E"
+    },
+    {
+        "Code": "535",
+        "Name": "Ash Gray - Very Light",
+        "Colour": "#4B4B49"
+    },
+    {
+        "Code": "543",
+        "Name": "Beige Brown - Ultra Very Light",
+        "Colour": "#EAD0B5"
+    },
+    {
+        "Code": "550",
+        "Name": "Violet - Very Dark",
+        "Colour": "#580E5C"
+    },
+    {
+        "Code": "552",
+        "Name": "Violet - Medium",
+        "Colour": "#902F99"
+    },
+    {
+        "Code": "553",
+        "Name": "Violet",
+        "Colour": "#A449AC"
+    },
+    {
+        "Code": "554",
+        "Name": "Violet - Light",
+        "Colour": "#DC9CDE"
+    },
+    {
+        "Code": "561",
+        "Name": "Jade - Very Dark",
+        "Colour": "#285E48"
+    },
+    {
+        "Code": "562",
+        "Name": "Jade - Medium",
+        "Colour": "#3B8C5A"
+    },
+    {
+        "Code": "563",
+        "Name": "Jade - Light",
+        "Colour": "#6ED39A"
+    },
+    {
+        "Code": "564",
+        "Name": "Jade - Very Light",
+        "Colour": "#95E4AF"
+    },
+    {
+        "Code": "580",
+        "Name": "Moss Green - Dark",
+        "Colour": "#355F0B"
+    },
+    {
+        "Code": "581",
+        "Name": "Moss Green",
+        "Colour": "#838A29"
+    },
+    {
+        "Code": "597",
+        "Name": "Turquoise",
+        "Colour": "#52ADAB"
+    },
+    {
+        "Code": "598",
+        "Name": "Turquoise - Light",
+        "Colour": "#97D8D3"
+    },
+    {
+        "Code": "600",
+        "Name": "Cranberry - Very Dark",
+        "Colour": "#BF1C48"
+    },
+    {
+        "Code": "601",
+        "Name": "Cranberry - Dark",
+        "Colour": "#C62A53"
+    },
+    {
+        "Code": "602",
+        "Name": "Cranberry - Medium",
+        "Colour": "#D63F68"
+    },
+    {
+        "Code": "603",
+        "Name": "Cranberry - Light Medium",
+        "Colour": "#FB4B7C"
+    },
+    {
+        "Code": "604",
+        "Name": "Cranberry - Light",
+        "Colour": "#F793B2"
+    },
+    {
+        "Code": "605",
+        "Name": "Cranberry - Very Light",
+        "Colour": "#FBACC4"
+    },
+    {
+        "Code": "606",
+        "Name": "Orange-red - Bright",
+        "Colour": "#F70F00"
+    },
+    {
+        "Code": "608",
+        "Name": "Orange - Bright",
+        "Colour": "#FD480C"
+    },
+    {
+        "Code": "610",
+        "Name": "Drab Brown - Dark",
+        "Colour": "#6B5039"
+    },
+    {
+        "Code": "611",
+        "Name": "Drab Brown",
+        "Colour": "#7C5F46"
+    },
+    {
+        "Code": "612",
+        "Name": "Drab Brown - Light",
+        "Colour": "#A6885E"
+    },
+    {
+        "Code": "613",
+        "Name": "Drab Brown - Very Light",
+        "Colour": "#B99F72"
+    },
+    {
+        "Code": "632",
+        "Name": "Desert Sand - Ultra Very Dark",
+        "Colour": "#7F4232"
+    },
+    {
+        "Code": "640",
+        "Name": "Beige Gray - Very Dark",
+        "Colour": "#817868"
+    },
+    {
+        "Code": "642",
+        "Name": "Beige Gray - Dark",
+        "Colour": "#958D79"
+    },
+    {
+        "Code": "644",
+        "Name": "Beige Gray - Medium",
+        "Colour": "#C4BEA6"
+    },
+    {
+        "Code": "645",
+        "Name": "Beaver Gray - Very Dark",
+        "Colour": "#5D5D54"
+    },
+    {
+        "Code": "646",
+        "Name": "Beaver Gray - Dark",
+        "Colour": "#6B6860"
+    },
+    {
+        "Code": "647",
+        "Name": "Beaver Gray - Medium",
+        "Colour": "#908E85"
+    },
+    {
+        "Code": "648",
+        "Name": "Beaver Gray - Light",
+        "Colour": "#A7A69F"
+    },
+    {
+        "Code": "666",
+        "Name": "Red - Bright",
+        "Colour": "#CE1B33"
+    },
+    {
+        "Code": "676",
+        "Name": "Old Gold - Light",
+        "Colour": "#ECBF7D"
+    },
+    {
+        "Code": "677",
+        "Name": "Old Gold - Very Light",
+        "Colour": "#F2DC9F"
+    },
+    {
+        "Code": "680",
+        "Name": "Old Gold - Dark",
+        "Colour": "#B07B46"
+    },
+    {
+        "Code": "699",
+        "Name": "Green",
+        "Colour": "#075B26"
+    },
+    {
+        "Code": "700",
+        "Name": "Green - Bright",
+        "Colour": "#076C34"
+    },
+    {
+        "Code": "701",
+        "Name": "Green - Light",
+        "Colour": "#217C36"
+    },
+    {
+        "Code": "702",
+        "Name": "Kelly Green",
+        "Colour": "#379130"
+    },
+    {
+        "Code": "703",
+        "Name": "Chartreuse",
+        "Colour": "#63B330"
+    },
+    {
+        "Code": "704",
+        "Name": "Chartreuse - Bright",
+        "Colour": "#88C53A"
+    },
+    {
+        "Code": "712",
+        "Name": "Cream",
+        "Colour": "#F6EFDA"
+    },
+    {
+        "Code": "718",
+        "Name": "Plum",
+        "Colour": "#CB2089"
+    },
+    {
+        "Code": "720",
+        "Name": "Orange Spice - Dark",
+        "Colour": "#C83A24"
+    },
+    {
+        "Code": "721",
+        "Name": "Orange Spice - Medium",
+        "Colour": "#F46440"
+    },
+    {
+        "Code": "722",
+        "Name": "Orange Spice - Light",
+        "Colour": "#F98756"
+    },
+    {
+        "Code": "724",
+        "Name": "Winnie The Pooh Gold",
+        "Colour": "#F9D039"
+    },
+    {
+        "Code": "725",
+        "Name": "Topaz",
+        "Colour": "#F9C15B"
+    },
+    {
+        "Code": "726",
+        "Name": "Topaz - Light",
+        "Colour": "#FDDB63"
+    },
+    {
+        "Code": "727",
+        "Name": "Topaz - Very Light",
+        "Colour": "#FDE98B"
+    },
+    {
+        "Code": "728",
+        "Name": "Golden Yellow",
+        "Colour": "#F2AE3F"
+    },
+    {
+        "Code": "729",
+        "Name": "Old Gold - Medium",
+        "Colour": "#CE9657"
+    },
+    {
+        "Code": "730",
+        "Name": "Olive Green - Very Dark",
+        "Colour": "#63520B"
+    },
+    {
+        "Code": "731",
+        "Name": "Olive Green - Dark",
+        "Colour": "#6B580B"
+    },
+    {
+        "Code": "732",
+        "Name": "Olive Green",
+        "Colour": "#725C0C"
+    },
+    {
+        "Code": "733",
+        "Name": "Olive Green - Medium",
+        "Colour": "#A78A44"
+    },
+    {
+        "Code": "734",
+        "Name": "Olive Green - Light",
+        "Colour": "#BB9C54"
+    },
+    {
+        "Code": "738",
+        "Name": "Tan - Very Light",
+        "Colour": "#E2B783"
+    },
+    {
+        "Code": "739",
+        "Name": "Tan - Ultra Very Light",
+        "Colour": "#F2DEB9"
+    },
+    {
+        "Code": "740",
+        "Name": "Tangerine",
+        "Colour": "#FD6F1A"
+    },
+    {
+        "Code": "741",
+        "Name": "Tangerine - Medium",
+        "Colour": "#FC8B10"
+    },
+    {
+        "Code": "742",
+        "Name": "Tangerine - Light",
+        "Colour": "#FDAE3C"
+    },
+    {
+        "Code": "743",
+        "Name": "Yellow - Medium",
+        "Colour": "#FDD769"
+    },
+    {
+        "Code": "744",
+        "Name": "Yellow - Pale",
+        "Colour": "#FEE88D"
+    },
+    {
+        "Code": "745",
+        "Name": "Yellow - Light Pale",
+        "Colour": "#FEEBA5"
+    },
+    {
+        "Code": "746",
+        "Name": "Off White",
+        "Colour": "#FAF2D5"
+    },
+    {
+        "Code": "747",
+        "Name": "Sky Blue - Very Light",
+        "Colour": "#CEE9EA"
+    },
+    {
+        "Code": "754",
+        "Name": "Peach - Light",
+        "Colour": "#F7C9B0"
+    },
+    {
+        "Code": "758",
+        "Name": "Terra Cotta - Very Light",
+        "Colour": "#E99F83"
+    },
+    {
+        "Code": "760",
+        "Name": "Salmon",
+        "Colour": "#EC8880"
+    },
+    {
+        "Code": "761",
+        "Name": "Salmon - Light",
+        "Colour": "#F8B4AD"
+    },
+    {
+        "Code": "762",
+        "Name": "Pearl Gray - Very Light",
+        "Colour": "#D1D0D2"
+    },
+    {
+        "Code": "772",
+        "Name": "Yellow Green - Very Light",
+        "Colour": "#D7EFA7"
+    },
+    {
+        "Code": "775",
+        "Name": "Baby Blue - Very Light",
+        "Colour": "#D4E3EF"
+    },
+    {
+        "Code": "776",
+        "Name": "Pink - Medium",
+        "Colour": "#FCA8AD"
+    },
+    {
+        "Code": "777",
+        "Name": "Red - Deep",
+        "Colour": "#9B0042"
+    },
+    {
+        "Code": "778",
+        "Name": "Antique Mauve - Very Light",
+        "Colour": "#DCA6A4"
+    },
+    {
+        "Code": "779",
+        "Name": "Brown",
+        "Colour": "#53332D"
+    },
+    {
+        "Code": "780",
+        "Name": "Topaz - Ultra Very Dark",
+        "Colour": "#945026"
+    },
+    {
+        "Code": "781",
+        "Name": "Topaz - Very Dark",
+        "Colour": "#A25F1F"
+    },
+    {
+        "Code": "782",
+        "Name": "Topaz - Dark",
+        "Colour": "#B26923"
+    },
+    {
+        "Code": "783",
+        "Name": "Topaz - Medium",
+        "Colour": "#D0883D"
+    },
+    {
+        "Code": "791",
+        "Name": "Cornflower Blue - Very Dark",
+        "Colour": "#2D2068"
+    },
+    {
+        "Code": "792",
+        "Name": "Cornflower Blue - Dark",
+        "Colour": "#454B8B"
+    },
+    {
+        "Code": "793",
+        "Name": "Cornflower Blue - Medium",
+        "Colour": "#7C82B5"
+    },
+    {
+        "Code": "794",
+        "Name": "Cornflower Blue - Light",
+        "Colour": "#A0B2D7"
+    },
+    {
+        "Code": "796",
+        "Name": "Royal Blue - Dark",
+        "Colour": "#272276"
+    },
+    {
+        "Code": "797",
+        "Name": "Royal Blue",
+        "Colour": "#2B3288"
+    },
+    {
+        "Code": "798",
+        "Name": "Delft Blue - Dark",
+        "Colour": "#4E5CA7"
+    },
+    {
+        "Code": "799",
+        "Name": "Delft Blue - Medium",
+        "Colour": "#6B7FC0"
+    },
+    {
+        "Code": "800",
+        "Name": "Delft Blue - Pale",
+        "Colour": "#B5C7E9"
+    },
+    {
+        "Code": "801",
+        "Name": "Coffee Brown - Dark",
+        "Colour": "#60391D"
+    },
+    {
+        "Code": "803",
+        "Name": "Blue - Deep",
+        "Colour": "#202754"
+    },
+    {
+        "Code": "806",
+        "Name": "Peacock Blue - Dark",
+        "Colour": "#1D6C87"
+    },
+    {
+        "Code": "807",
+        "Name": "Peacock Blue",
+        "Colour": "#558B9E"
+    },
+    {
+        "Code": "809",
+        "Name": "Delft Blue",
+        "Colour": "#919FD5"
+    },
+    {
+        "Code": "813",
+        "Name": "Blue - Light",
+        "Colour": "#7FA0C6"
+    },
+    {
+        "Code": "814",
+        "Name": "Garnet - Dark",
+        "Colour": "#711033"
+    },
+    {
+        "Code": "815",
+        "Name": "Garnet - Medium",
+        "Colour": "#800B34"
+    },
+    {
+        "Code": "816",
+        "Name": "Garnet",
+        "Colour": "#921238"
+    },
+    {
+        "Code": "817",
+        "Name": "Coral Red - Very Dark",
+        "Colour": "#BB1630"
+    },
+    {
+        "Code": "818",
+        "Name": "Baby Pink",
+        "Colour": "#FEDEDD"
+    },
+    {
+        "Code": "819",
+        "Name": "Baby Pink - Light",
+        "Colour": "#FCEBDE"
+    },
+    {
+        "Code": "820",
+        "Name": "Royal Blue - Very Dark",
+        "Colour": "#151264"
+    },
+    {
+        "Code": "822",
+        "Name": "Beige Gray - Light",
+        "Colour": "#E8DFC7"
+    },
+    {
+        "Code": "823",
+        "Name": "Blue - Dark",
+        "Colour": "#000B44"
+    },
+    {
+        "Code": "824",
+        "Name": "Blue - Very Dark",
+        "Colour": "#284779"
+    },
+    {
+        "Code": "825",
+        "Name": "Blue - Dark",
+        "Colour": "#34588F"
+    },
+    {
+        "Code": "826",
+        "Name": "Blue - Medium",
+        "Colour": "#5075A7"
+    },
+    {
+        "Code": "827",
+        "Name": "Blue - Very Light",
+        "Colour": "#A4C1DE"
+    },
+    {
+        "Code": "828",
+        "Name": "Blue - Ultra Very Light",
+        "Colour": "#C3D7E6"
+    },
+    {
+        "Code": "829",
+        "Name": "Golden Olive - Very Dark",
+        "Colour": "#64480C"
+    },
+    {
+        "Code": "830",
+        "Name": "Golden Olive - Dark",
+        "Colour": "#6E501D"
+    },
+    {
+        "Code": "831",
+        "Name": "Golden Olive - Medium",
+        "Colour": "#7C5F20"
+    },
+    {
+        "Code": "832",
+        "Name": "Golden Olive",
+        "Colour": "#9C7230"
+    },
+    {
+        "Code": "833",
+        "Name": "Golden Olive - Light",
+        "Colour": "#B99956"
+    },
+    {
+        "Code": "834",
+        "Name": "Golden Olive - Very Light",
+        "Colour": "#D2B468"
+    },
+    {
+        "Code": "838",
+        "Name": "Beige Brown - Very Dark",
+        "Colour": "#4A3021"
+    },
+    {
+        "Code": "839",
+        "Name": "Beige Brown - Dark",
+        "Colour": "#5A3C2D"
+    },
+    {
+        "Code": "840",
+        "Name": "Beige Brown - Medium",
+        "Colour": "#7A5939"
+    },
+    {
+        "Code": "841",
+        "Name": "Beige Brown - Light",
+        "Colour": "#A37D64"
+    },
+    {
+        "Code": "842",
+        "Name": "Beige Brown - Very Light",
+        "Colour": "#CBB094"
+    },
+    {
+        "Code": "844",
+        "Name": "Beaver Gray - Ultra Dark",
+        "Colour": "#494842"
+    },
+    {
+        "Code": "868",
+        "Name": "Hazel Nut Brown",
+        "Colour": "#995C30"
+    },
+    {
+        "Code": "869",
+        "Name": "Hazelnut Brown - Very Dark",
+        "Colour": "#784C28"
+    },
+    {
+        "Code": "739",
+        "Name": "Tan - Ultra Very Light",
+        "Colour": "#F2DEB9"
+    },
+    {
+        "Code": "740",
+        "Name": "Tangerine",
+        "Colour": "#FD6F1A"
+    },
+    {
+        "Code": "741",
+        "Name": "Tangerine - Medium",
+        "Colour": "#FC8B10"
+    },
+    {
+        "Code": "742",
+        "Name": "Tangerine - Light",
+        "Colour": "#FDAE3C"
+    },
+    {
+        "Code": "743",
+        "Name": "Yellow - Medium",
+        "Colour": "#FDD769"
+    },
+    {
+        "Code": "744",
+        "Name": "Yellow - Pale",
+        "Colour": "#FEE88D"
+    },
+    {
+        "Code": "745",
+        "Name": "Yellow - Light Pale",
+        "Colour": "#FEEBA5"
+    },
+    {
+        "Code": "746",
+        "Name": "Off White",
+        "Colour": "#FAF2D5"
+    },
+    {
+        "Code": "747",
+        "Name": "Sky Blue - Very Light",
+        "Colour": "#CEE9EA"
+    },
+    {
+        "Code": "754",
+        "Name": "Peach - Light",
+        "Colour": "#F7C9B0"
+    },
+    {
+        "Code": "758",
+        "Name": "Terra Cotta - Very Light",
+        "Colour": "#E99F83"
+    },
+    {
+        "Code": "760",
+        "Name": "Salmon",
+        "Colour": "#EC8880"
+    },
+    {
+        "Code": "761",
+        "Name": "Salmon - Light",
+        "Colour": "#F8B4AD"
+    },
+    {
+        "Code": "762",
+        "Name": "Pearl Gray - Very Light",
+        "Colour": "#D1D0D2"
+    },
+    {
+        "Code": "772",
+        "Name": "Yellow Green - Very Light",
+        "Colour": "#D7EFA7"
+    },
+    {
+        "Code": "775",
+        "Name": "Baby Blue - Very Light",
+        "Colour": "#D4E3EF"
+    },
+    {
+        "Code": "776",
+        "Name": "Pink - Medium",
+        "Colour": "#FCA8AD"
+    },
+    {
+        "Code": "777",
+        "Name": "Red - Deep",
+        "Colour": "#9B0042"
+    },
+    {
+        "Code": "778",
+        "Name": "Antique Mauve - Very Light",
+        "Colour": "#DCA6A4"
+    },
+    {
+        "Code": "779",
+        "Name": "Brown",
+        "Colour": "#53332D"
+    },
+    {
+        "Code": "780",
+        "Name": "Topaz - Ultra Very Dark",
+        "Colour": "#945026"
+    },
+    {
+        "Code": "781",
+        "Name": "Topaz - Very Dark",
+        "Colour": "#A25F1F"
+    },
+    {
+        "Code": "782",
+        "Name": "Topaz - Dark",
+        "Colour": "#B26923"
+    },
+    {
+        "Code": "783",
+        "Name": "Topaz - Medium",
+        "Colour": "#D0883D"
+    },
+    {
+        "Code": "791",
+        "Name": "Cornflower Blue - Very Dark",
+        "Colour": "#2D2068"
+    },
+    {
+        "Code": "792",
+        "Name": "Cornflower Blue - Dark",
+        "Colour": "#454B8B"
+    },
+    {
+        "Code": "793",
+        "Name": "Cornflower Blue - Medium",
+        "Colour": "#7C82B5"
+    },
+    {
+        "Code": "794",
+        "Name": "Cornflower Blue - Light",
+        "Colour": "#A0B2D7"
+    },
+    {
+        "Code": "796",
+        "Name": "Royal Blue - Dark",
+        "Colour": "#272276"
+    },
+    {
+        "Code": "797",
+        "Name": "Royal Blue",
+        "Colour": "#2B3288"
+    },
+    {
+        "Code": "798",
+        "Name": "Delft Blue - Dark",
+        "Colour": "#4E5CA7"
+    },
+    {
+        "Code": "799",
+        "Name": "Delft Blue - Medium",
+        "Colour": "#6B7FC0"
+    },
+    {
+        "Code": "800",
+        "Name": "Delft Blue - Pale",
+        "Colour": "#B5C7E9"
+    },
+    {
+        "Code": "801",
+        "Name": "Coffee Brown - Dark",
+        "Colour": "#60391D"
+    },
+    {
+        "Code": "803",
+        "Name": "Blue - Deep",
+        "Colour": "#202754"
+    },
+    {
+        "Code": "806",
+        "Name": "Peacock Blue - Dark",
+        "Colour": "#1D6C87"
+    },
+    {
+        "Code": "807",
+        "Name": "Peacock Blue",
+        "Colour": "#558B9E"
+    },
+    {
+        "Code": "809",
+        "Name": "Delft Blue",
+        "Colour": "#919FD5"
+    },
+    {
+        "Code": "813",
+        "Name": "Blue - Light",
+        "Colour": "#7FA0C6"
+    },
+    {
+        "Code": "814",
+        "Name": "Garnet - Dark",
+        "Colour": "#711033"
+    },
+    {
+        "Code": "815",
+        "Name": "Garnet - Medium",
+        "Colour": "#800B34"
+    },
+    {
+        "Code": "816",
+        "Name": "Garnet",
+        "Colour": "#921238"
+    },
+    {
+        "Code": "817",
+        "Name": "Coral Red - Very Dark",
+        "Colour": "#BB1630"
+    },
+    {
+        "Code": "818",
+        "Name": "Baby Pink",
+        "Colour": "#FEDEDD"
+    },
+    {
+        "Code": "819",
+        "Name": "Baby Pink - Light",
+        "Colour": "#FCEBDE"
+    },
+    {
+        "Code": "820",
+        "Name": "Royal Blue - Very Dark",
+        "Colour": "#151264"
+    },
+    {
+        "Code": "822",
+        "Name": "Beige Gray - Light",
+        "Colour": "#E8DFC7"
+    },
+    {
+        "Code": "823",
+        "Name": "Blue - Dark",
+        "Colour": "#000B44"
+    },
+    {
+        "Code": "824",
+        "Name": "Blue - Very Dark",
+        "Colour": "#284779"
+    },
+    {
+        "Code": "825",
+        "Name": "Blue - Dark",
+        "Colour": "#34588F"
+    },
+    {
+        "Code": "826",
+        "Name": "Blue - Medium",
+        "Colour": "#5075A7"
+    },
+    {
+        "Code": "827",
+        "Name": "Blue - Very Light",
+        "Colour": "#A4C1DE"
+    },
+    {
+        "Code": "828",
+        "Name": "Blue - Ultra Very Light",
+        "Colour": "#C3D7E6"
+    },
+    {
+        "Code": "829",
+        "Name": "Golden Olive - Very Dark",
+        "Colour": "#64480C"
+    },
+    {
+        "Code": "830",
+        "Name": "Golden Olive - Dark",
+        "Colour": "#6E501D"
+    },
+    {
+        "Code": "831",
+        "Name": "Golden Olive - Medium",
+        "Colour": "#7C5F20"
+    },
+    {
+        "Code": "832",
+        "Name": "Golden Olive",
+        "Colour": "#9C7230"
+    },
+    {
+        "Code": "833",
+        "Name": "Golden Olive - Light",
+        "Colour": "#B99956"
+    },
+    {
+        "Code": "834",
+        "Name": "Golden Olive - Very Light",
+        "Colour": "#D2B468"
+    },
+    {
+        "Code": "838",
+        "Name": "Beige Brown - Very Dark",
+        "Colour": "#4A3021"
+    },
+    {
+        "Code": "839",
+        "Name": "Beige Brown - Dark",
+        "Colour": "#5A3C2D"
+    },
+    {
+        "Code": "840",
+        "Name": "Beige Brown - Medium",
+        "Colour": "#7A5939"
+    },
+    {
+        "Code": "841",
+        "Name": "Beige Brown - Light",
+        "Colour": "#A37D64"
+    },
+    {
+        "Code": "842",
+        "Name": "Beige Brown - Very Light",
+        "Colour": "#CBB094"
+    },
+    {
+        "Code": "844",
+        "Name": "Beaver Gray - Ultra Dark",
+        "Colour": "#494842"
+    },
+    {
+        "Code": "868",
+        "Name": "Hazel Nut Brown",
+        "Colour": "#995C30"
+    },
+    {
+        "Code": "869",
+        "Name": "Hazelnut Brown - Very Dark",
+        "Colour": "#784C28"
+    },
+    {
+        "Code": "988",
+        "Name": "Forest Green - Medium",
+        "Colour": "#66924A"
+    },
+    {
+        "Code": "989",
+        "Name": "Forest Green",
+        "Colour": "#71A74E"
+    },
+    {
+        "Code": "991",
+        "Name": "Aquamarine - Dark",
+        "Colour": "#135F55"
+    },
+    {
+        "Code": "992",
+        "Name": "Aquamarine - Light",
+        "Colour": "#42B59E"
+    },
+    {
+        "Code": "993",
+        "Name": "Aquamarine - Very Light",
+        "Colour": "#62D8B6"
+    },
+    {
+        "Code": "995",
+        "Name": "Electric Blue - Dark",
+        "Colour": "#0061B0"
+    },
+    {
+        "Code": "996",
+        "Name": "Electric Blue - Medium",
+        "Colour": "#49A8EB"
+    },
+    {
+        "Code": "3011",
+        "Name": "Khaki Green - Dark",
+        "Colour": "#655935"
+    },
+    {
+        "Code": "3012",
+        "Name": "Khaki Green - Medium",
+        "Colour": "#8B7B4E"
+    },
+    {
+        "Code": "3013",
+        "Name": "Khaki Green - Light",
+        "Colour": "#AFA97B"
+    },
+    {
+        "Code": "3021",
+        "Name": "Brown Gray - Very Dark",
+        "Colour": "#50403B"
+    },
+    {
+        "Code": "3022",
+        "Name": "Brown Gray - Medium",
+        "Colour": "#848274"
+    },
+    {
+        "Code": "3023",
+        "Name": "Brown Gray - Light",
+        "Colour": "#A29B86"
+    },
+    {
+        "Code": "3024",
+        "Name": "Brown Gray - Very Light",
+        "Colour": "#BEB8AC"
+    },
+    {
+        "Code": "3031",
+        "Name": "Mocha Brown - Very Dark",
+        "Colour": "#423014"
+    },
+    {
+        "Code": "3032",
+        "Name": "Mocha Brown - Medium",
+        "Colour": "#9D8868"
+    },
+    {
+        "Code": "3033",
+        "Name": "Mocha Brown - Very Light",
+        "Colour": "#DBC7AD"
+    },
+    {
+        "Code": "3041",
+        "Name": "Antique Violet - Medium",
+        "Colour": "#866A76"
+    },
+    {
+        "Code": "3042",
+        "Name": "Antique Violet - Light",
+        "Colour": "#AF98A0"
+    },
+    {
+        "Code": "3045",
+        "Name": "Yellow Beige - Dark",
+        "Colour": "#AF8152"
+    },
+    {
+        "Code": "3046",
+        "Name": "Yellow Beige - Medium",
+        "Colour": "#CEB074"
+    },
+    {
+        "Code": "3047",
+        "Name": "Yellow Beige - Light",
+        "Colour": "#EAD8AB"
+    },
+    {
+        "Code": "3051",
+        "Name": "Green Gray - Dark",
+        "Colour": "#4C4C1E"
+    },
+    {
+        "Code": "3052",
+        "Name": "Green Gray - Medium",
+        "Colour": "#787E5C"
+    },
+    {
+        "Code": "3053",
+        "Name": "Green Gray",
+        "Colour": "#999D75"
+    },
+    {
+        "Code": "3064",
+        "Name": "Desert Sand",
+        "Colour": "#BA7056"
+    },
+    {
+        "Code": "3072",
+        "Name": "Beaver Gray - Very Light",
+        "Colour": "#D2D2CA"
+    },
+    {
+        "Code": "3078",
+        "Name": "Golden Yellow - Very Light",
+        "Colour": "#FCF6B6"
+    },
+    {
+        "Code": "3325",
+        "Name": "Baby Blue - Light",
+        "Colour": "#ADCDE7"
+    },
+    {
+        "Code": "3326",
+        "Name": "Rose - Light",
+        "Colour": "#F9979C"
+    },
+    {
+        "Code": "3328",
+        "Name": "Salmon - Dark",
+        "Colour": "#BE444A"
+    },
+    {
+        "Code": "3340",
+        "Name": "Apricot - Medium",
+        "Colour": "#FD6B4F"
+    },
+    {
+        "Code": "3341",
+        "Name": "Apricot",
+        "Colour": "#FD8E78"
+    },
+    {
+        "Code": "3345",
+        "Name": "Hunter Green - Dark",
+        "Colour": "#40552E"
+    },
+    {
+        "Code": "3346",
+        "Name": "Hunter Green",
+        "Colour": "#56743B"
+    },
+    {
+        "Code": "3347",
+        "Name": "Yellow Green - Medium",
+        "Colour": "#6D9646"
+    },
+    {
+        "Code": "3348",
+        "Name": "Yellow Green - Light",
+        "Colour": "#BEDF74"
+    },
+    {
+        "Code": "3350",
+        "Name": "Dusty Rose - Ultra Dark",
+        "Colour": "#AA3949"
+    },
+    {
+        "Code": "3354",
+        "Name": "Dusty Rose - Light",
+        "Colour": "#EFA5AC"
+    },
+    {
+        "Code": "3362",
+        "Name": "Pine Green - Dark",
+        "Colour": "#49523C"
+    },
+    {
+        "Code": "3363",
+        "Name": "Pine Green - Medium",
+        "Colour": "#617451"
+    },
+    {
+        "Code": "3364",
+        "Name": "Pine Green",
+        "Colour": "#8E9B6D"
+    },
+    {
+        "Code": "3371",
+        "Name": "Black Brown",
+        "Colour": "#36220E"
+    },
+    {
+        "Code": "3607",
+        "Name": "Plum - Light",
+        "Colour": "#D94C9D"
+    },
+    {
+        "Code": "3608",
+        "Name": "Plum - Very Light",
+        "Colour": "#EC81BE"
+    },
+    {
+        "Code": "3609",
+        "Name": "Plum - Ultra Light",
+        "Colour": "#F6B0DF"
+    },
+    {
+        "Code": "3684",
+        "Name": "Garnet - Extremely Dark",
+        "Colour": "#4C1329"
+    },
+    {
+        "Code": "3685",
+        "Name": "Mauve - Very Dark",
+        "Colour": "#79263B"
+    },
+    {
+        "Code": "3687",
+        "Name": "Mauve",
+        "Colour": "#B5455D"
+    },
+    {
+        "Code": "3688",
+        "Name": "Mauve - Medium",
+        "Colour": "#DC7C86"
+    },
+    {
+        "Code": "3689",
+        "Name": "Mauve - Light",
+        "Colour": "#F8BBC8"
+    },
+    {
+        "Code": "3705",
+        "Name": "Melon - Dark",
+        "Colour": "#F2494F"
+    },
+    {
+        "Code": "3706",
+        "Name": "Melon - Medium",
+        "Colour": "#FD6E70"
+    },
+    {
+        "Code": "3708",
+        "Name": "Melon - Light",
+        "Colour": "#FDA0AE"
+    },
+    {
+        "Code": "3712",
+        "Name": "Salmon - Medium",
+        "Colour": "#D95D5D"
+    },
+    {
+        "Code": "3713",
+        "Name": "Salmon - Very Light",
+        "Colour": "#FDD5D0"
+    },
+    {
+        "Code": "3716",
+        "Name": "Dusty Rose - Very Light",
+        "Colour": "#FCAFB9"
+    },
+    {
+        "Code": "3721",
+        "Name": "Shell Pink - Dark",
+        "Colour": "#933B3D"
+    },
+    {
+        "Code": "3722",
+        "Name": "Shell Pink - Medium",
+        "Colour": "#A04B4C"
+    },
+    {
+        "Code": "3726",
+        "Name": "Antique Mauve - Dark",
+        "Colour": "#95565C"
+    },
+    {
+        "Code": "3727",
+        "Name": "Antique Mauve - Light",
+        "Colour": "#DA9EA6"
+    },
+    {
+        "Code": "3731",
+        "Name": "Dusty Rose - Very Dark",
+        "Colour": "#C34C5C"
+    },
+    {
+        "Code": "3733",
+        "Name": "Dusty Rose",
+        "Colour": "#EA7E86"
+    },
+    {
+        "Code": "3740",
+        "Name": "Antique Violet - Dark",
+        "Colour": "#71535D"
+    },
+    {
+        "Code": "3743",
+        "Name": "Antique Violet - Very Light",
+        "Colour": "#CFC2C9"
+    },
+    {
+        "Code": "3746",
+        "Name": "Blue Violet - Dark",
+        "Colour": "#844AB5"
+    },
+    {
+        "Code": "3747",
+        "Name": "Blue Violet - Very Light",
+        "Colour": "#D0C5EC"
+    },
+    {
+        "Code": "3750",
+        "Name": "Antique Blue - Very Dark",
+        "Colour": "#1D4552"
+    },
+    {
+        "Code": "3752",
+        "Name": "Antique Blue - Very Light",
+        "Colour": "#BAC9CC"
+    },
+    {
+        "Code": "3753",
+        "Name": "Antique Blue - Ultra Very Light",
+        "Colour": "#D9E6EC"
+    },
+    {
+        "Code": "3755",
+        "Name": "Baby Blue",
+        "Colour": "#81A5D8"
+    },
+    {
+        "Code": "3756",
+        "Name": "Baby Blue - Light",
+        "Colour": "#E9F4FA"
+    },
+    {
+        "Code": "3760",
+        "Name": "Wedgewood - Medium",
+        "Colour": "#467293"
+    },
+    {
+        "Code": "3761",
+        "Name": "Sky Blue - Light",
+        "Colour": "#B1D0DF"
+    },
+    {
+        "Code": "3765",
+        "Name": "Peacock Blue - Very Dark",
+        "Colour": "#175E78"
+    },
+    {
+        "Code": "3766",
+        "Name": "Peacock Blue - Light",
+        "Colour": "#4B8AA1"
+    },
+    {
+        "Code": "3768",
+        "Name": "Gray Green - Dark",
+        "Colour": "#4C605F"
+    },
+    {
+        "Code": "3770",
+        "Name": "Tawny - Very Light",
+        "Colour": "#FEF1D8"
+    },
+    {
+        "Code": "3771",
+        "Name": "Peach - Dark",
+        "Colour": "#E8AC9B"
+    },
+    {
+        "Code": "3772",
+        "Name": "Desert Sand - Very Dark",
+        "Colour": "#995744"
+    },
+    {
+        "Code": "3773",
+        "Name": "Desert Sand - Medium",
+        "Colour": "#CF866D"
+    },
+    {
+        "Code": "3774",
+        "Name": "Desert Sand - Very Light",
+        "Colour": "#F3CFB4"
+    },
+    {
+        "Code": "3776",
+        "Name": "Mahogany - Light",
+        "Colour": "#C96444"
+    },
+    {
+        "Code": "3777",
+        "Name": "Terra Cotta - Very Dark",
+        "Colour": "#922F25"
+    },
+    {
+        "Code": "3778",
+        "Name": "Terra Cotta - Light",
+        "Colour": "#D2705C"
+    },
+    {
+        "Code": "3779",
+        "Name": "Terra Cotta - Ultra Very Light",
+        "Colour": "#F2AB95"
+    },
+    {
+        "Code": "3781",
+        "Name": "Mocha Brown - Dark",
+        "Colour": "#593F2B"
+    },
+    {
+        "Code": "3782",
+        "Name": "Mocha Brown - Light",
+        "Colour": "#B69D80"
+    },
+    {
+        "Code": "3787",
+        "Name": "Brown Gray - Dark",
+        "Colour": "#62524C"
+    },
+    {
+        "Code": "3790",
+        "Name": "Beige Gray - Ultra Dark",
+        "Colour": "#6D5A4B"
+    },
+    {
+        "Code": "3799",
+        "Name": "Pewter Gray - Very Dark",
+        "Colour": "#39393D"
+    },
+    {
+        "Code": "3801",
+        "Name": "Melon - Very Dark",
+        "Colour": "#E4353D"
+    },
+    {
+        "Code": "3802",
+        "Name": "Antique Mauve - Very Dark",
+        "Colour": "#672A33"
+    },
+    {
+        "Code": "3803",
+        "Name": "Mauve - Dark",
+        "Colour": "#872A43"
+    },
+    {
+        "Code": "3804",
+        "Name": "Cyclamen Pink - Dark",
+        "Colour": "#CE2B63"
+    },
+    {
+        "Code": "3805",
+        "Name": "Cyclamen Pink",
+        "Colour": "#DF3C73"
+    },
+    {
+        "Code": "3806",
+        "Name": "Cyclamen Pink - Light",
+        "Colour": "#F15A91"
+    },
+    {
+        "Code": "3807",
+        "Name": "Cornflower Blue",
+        "Colour": "#4B599E"
+    },
+    {
+        "Code": "3808",
+        "Name": "Turquoise - Ultra Very Dark",
+        "Colour": "#03535C"
+    },
+    {
+        "Code": "3809",
+        "Name": "Turquoise - Very Dark",
+        "Colour": "#136A75"
+    },
+    {
+        "Code": "3810",
+        "Name": "Turquoise - Dark",
+        "Colour": "#2D8D98"
+    },
+    {
+        "Code": "3811",
+        "Name": "Turquoise - Very Light",
+        "Colour": "#A8E2E5"
+    },
+    {
+        "Code": "3812",
+        "Name": "Seagreen - Very Dark",
+        "Colour": "#07A184"
+    },
+    {
+        "Code": "3813",
+        "Name": "Blue Green - Light",
+        "Colour": "#86C3AB"
+    },
+    {
+        "Code": "3814",
+        "Name": "Aquamarine",
+        "Colour": "#0B8673"
+    },
+    {
+        "Code": "3815",
+        "Name": "Celadon Green - Dark",
+        "Colour": "#437259"
+    },
+    {
+        "Code": "3816",
+        "Name": "Celadon Green",
+        "Colour": "#60937A"
+    },
+    {
+        "Code": "3817",
+        "Name": "Celadon Green - Light",
+        "Colour": "#81C6A4"
+    },
+    {
+        "Code": "3818",
+        "Name": "Emerald Green - Ultra Very Dark",
+        "Colour": "#005D2E"
+    },
+    {
+        "Code": "3819",
+        "Name": "Moss Green - Light",
+        "Colour": "#CCC959"
+    },
+    {
+        "Code": "3820",
+        "Name": "Straw - Dark",
+        "Colour": "#DBA53E"
+    },
+    {
+        "Code": "3821",
+        "Name": "Straw",
+        "Colour": "#EBBB52"
+    },
+    {
+        "Code": "3822",
+        "Name": "Straw - Light",
+        "Colour": "#F7D169"
+    },
+    {
+        "Code": "3823",
+        "Name": "Yellow - Ultra Pale",
+        "Colour": "#FEF5CD"
+    },
+    {
+        "Code": "3824",
+        "Name": "Apricot - Light",
+        "Colour": "#FCAE99"
+    },
+    {
+        "Code": "3825",
+        "Name": "Pumpkin - Pale",
+        "Colour": "#FEA370"
+    },
+    {
+        "Code": "3826",
+        "Name": "Golden Brown",
+        "Colour": "#B16633"
+    },
+    {
+        "Code": "3827",
+        "Name": "Golden Brown - Pale",
+        "Colour": "#EAA664"
+    },
+    {
+        "Code": "3828",
+        "Name": "Hazelnut Brown",
+        "Colour": "#AA7C43"
+    },
+    {
+        "Code": "3829",
+        "Name": "Old Gold - Very Dark",
+        "Colour": "#A7671D"
+    },
+    {
+        "Code": "3830",
+        "Name": "Terra Cotta",
+        "Colour": "#A94138"
+    },
+    {
+        "Code": "3831",
+        "Name": "Raspberry - Dark",
+        "Colour": "#C12B52"
+    },
+    {
+        "Code": "3832",
+        "Name": "Raspberry - Medium",
+        "Colour": "#E36370"
+    },
+    {
+        "Code": "3833",
+        "Name": "Raspberry - Light",
+        "Colour": "#EA8B96"
+    },
+    {
+        "Code": "3834",
+        "Name": "Grape - Dark",
+        "Colour": "#6A2258"
+    },
+    {
+        "Code": "3835",
+        "Name": "Grape - Medium",
+        "Colour": "#924D78"
+    },
+    {
+        "Code": "3836",
+        "Name": "Grape - Light",
+        "Colour": "#C597B9"
+    },
+    {
+        "Code": "3837",
+        "Name": "Lavender - Ultra Dark",
+        "Colour": "#8A2A8F"
+    },
+    {
+        "Code": "3838",
+        "Name": "Lavender Blue - Dark",
+        "Colour": "#606BAD"
+    },
+    {
+        "Code": "3839",
+        "Name": "Lavender Blue - Medium",
+        "Colour": "#7A7EC5"
+    },
+    {
+        "Code": "3840",
+        "Name": "Lavender Blue - Light",
+        "Colour": "#B2BDEA"
+    },
+    {
+        "Code": "3841",
+        "Name": "Baby Blue - Pale",
+        "Colour": "#D9EAF2"
+    },
+    {
+        "Code": "3842",
+        "Name": "Wedgewood - Dark",
+        "Colour": "#06506A"
+    },
+    {
+        "Code": "3843",
+        "Name": "Electric Blue",
+        "Colour": "#28A3DE"
+    },
+    {
+        "Code": "3844",
+        "Name": "Bright Turquoise - Dark",
+        "Colour": "#1F7FA0"
+    },
+    {
+        "Code": "3845",
+        "Name": "Bright Turquoise - Medium",
+        "Colour": "#2BADD1"
+    },
+    {
+        "Code": "3846",
+        "Name": "Bright Turquoise - Light",
+        "Colour": "#5ECCEC"
+    },
+    {
+        "Code": "3847",
+        "Name": "Teal Green - Dark",
+        "Colour": "#186358"
+    },
+    {
+        "Code": "3848",
+        "Name": "Teal Green - Medium",
+        "Colour": "#207E72"
+    },
+    {
+        "Code": "3849",
+        "Name": "Teal Green - Light",
+        "Colour": "#35B193"
+    },
+    {
+        "Code": "3850",
+        "Name": "Bright Green - Dark",
+        "Colour": "#208B46"
+    },
+    {
+        "Code": "3851",
+        "Name": "Bright Green - Light",
+        "Colour": "#61BB84"
+    },
+    {
+        "Code": "3852",
+        "Name": "Straw - Very Dark",
+        "Colour": "#E3A730"
+    },
+    {
+        "Code": "3853",
+        "Name": "Autumn Gold - Dark",
+        "Colour": "#EF8125"
+    },
+    {
+        "Code": "3854",
+        "Name": "Autumn Gold - Medium",
+        "Colour": "#FBAC56"
+    },
+    {
+        "Code": "3855",
+        "Name": "Autumn Gold - Light",
+        "Colour": "#FDDFA0"
+    },
+    {
+        "Code": "3856",
+        "Name": "Mahogany - Ultra Very Light",
+        "Colour": "#FDBE8E"
+    },
+    {
+        "Code": "3857",
+        "Name": "Rosewood - Dark",
+        "Colour": "#6A2F26"
+    },
+    {
+        "Code": "3858",
+        "Name": "Rosewood - Medium",
+        "Colour": "#803A32"
+    },
+    {
+        "Code": "3859",
+        "Name": "Rosewood - Light",
+        "Colour": "#BA7A6C"
+    },
+    {
+        "Code": "3860",
+        "Name": "Cocoa",
+        "Colour": "#896362"
+    },
+    {
+        "Code": "3861",
+        "Name": "Cocoa - Light",
+        "Colour": "#AC8583"
+    },
+    {
+        "Code": "3862",
+        "Name": "Mocha Beige - Dark",
+        "Colour": "#6E492A"
+    },
+    {
+        "Code": "3863",
+        "Name": "Mocha Beige - Medium",
+        "Colour": "#94725D"
+    },
+    {
+        "Code": "3864",
+        "Name": "Mocha Beige - Light",
+        "Colour": "#C9AA92"
+    },
+    {
+        "Code": "3865",
+        "Name": "Winter White",
+        "Colour": "#FFFDF9"
+    },
+    {
+        "Code": "3866",
+        "Name": "Mocha Brown - Ultra Very Light",
+        "Colour": "#F0E6D7"
+    },
+    {
+        "Code": "3880",
+        "Name": "Shell Pink - Light",
+        "Colour": "#BB6864"
+    },
+    {
+        "Code": "3881",
+        "Name": "Green - Light",
+        "Colour": "#BAE4B6"
+    },
+    {
+        "Code": "3882",
+        "Name": "Beige Brown - Dark",
+        "Colour": "#5A3C2D"
+    },
+    {
+        "Code": "3883",
+        "Name": "Orange Spice - Light",
+        "Colour": "#F98756"
+    },
+    {
+        "Code": "3884",
+        "Name": "Ash Gray - Very Light",
+        "Colour": "#4B4B49"
+    },
+    {
+        "Code": "3885",
+        "Name": "Baby Blue - Very Dark",
+        "Colour": "#1F3279"
+    },
+    {
+        "Code": "3886",
+        "Name": "Mauve - Very Dark",
+        "Colour": "#79263B"
+    },
+    {
+        "Code": "3887",
+        "Name": "Lavender - Very Dark",
+        "Colour": "#9442A7"
+    },
+    {
+        "Code": "3888",
+        "Name": "Antique Violet - Dark",
+        "Colour": "#71535D"
+    },
+    {
+        "Code": "3889",
+        "Name": "Lemon - Light",
+        "Colour": "#FCF999"
+    },
+    {
+        "Code": "3890",
+        "Name": "Peacock Blue - Light",
+        "Colour": "#4B8AA1"
+    },
+    {
+        "Code": "3891",
+        "Name": "Electric Blue - Dark",
+        "Colour": "#0061B0"
+    },
+    {
+        "Code": "3892",
+        "Name": "Tangerine",
+        "Colour": "#FD6F1A"
+    },
+    {
+        "Code": "3893",
+        "Name": "Beige Brown - Ultra Very Light",
+        "Colour": "#EAD0B5"
+    },
+    {
+        "Code": "3894",
+        "Name": "Parrot Green - Light",
+        "Colour": "#9DC72D"
+    },
+    {
+        "Code": "3895",
+        "Name": "Beaver Gray - Dark",
+        "Colour": "#6B6860"
+    }
+]

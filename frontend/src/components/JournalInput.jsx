@@ -41,7 +41,7 @@ const COL_MAP = [
         { h: [0, 15], s: [80, 100], l: [80, 95] }, // red
         { h: [260, 280], s: [40, 60], l: [80, 90] }, // purple
         //{ h: [90, 130], s: [30, 45], l: [80, 90] }, // green
-        { h: [170, 190], s: [50, 80], l: [85, 95] }, // turquiose
+        { h: [170, 190], s: [50, 80], l: [85, 95] }, // turquoise
     ] },
 ];
 
@@ -108,7 +108,7 @@ const JournalInput = (props) => {
     };
 
     return(
-        <div className>
+        <div>
             <div className="logo-banner">
                 <h1>Loops <small>in</small> <i>Stitches</i></h1>
             </div>
@@ -123,6 +123,11 @@ const JournalInput = (props) => {
                 <br></br>
                 <button type="button" name="toCanvas" className="btnSubmit" onClick={ analyze }>Submit Entry</button>
                 {/*<button type="button" name="toCanvas" onClick={ (e) => {props.update(e.target.name)} }>Bypass</button>*/}
+            </div>
+
+            <div className="attribution">
+                Using the <a href='https://huggingface.co/j-hartmann/emotion-english-distilroberta-base'>Emotion English DistilRoBERTa-base by Jochen Hartmann,</a>
+                hosted on <a href='https://huggingface.co/'>Hugging Face</a>.
             </div>
         </div>
     )

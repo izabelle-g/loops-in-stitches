@@ -1,14 +1,21 @@
 import P5Canvas from "./P5Canvas";
+import { useState } from 'react';
 
 const DesignArea = (props) => {
+    const [toThreads, setToThreads] = useState([]);
+    const [threadList, setThreadList] = useState([]);
+    let threads = [];
     const handleBack = (e) => { props.update(e.target.name) };
-    const handleExport = () => {
+    const handleExport = async () => {
+      // TODO: call to supabase
+    };      
 
-    };
+      
+    const getToThreads = (c) => { setToThreads(c) };
 
     return(
         <div className="designArea">            
-            <P5Canvas palettes={props.palettes} emotion={props.emotion}/>
+            <P5Canvas palettes={props.palettes} emotion={props.emotion} threads={ getToThreads }/>
             <br></br>
 
             <div className='buttons'>

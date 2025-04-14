@@ -131,6 +131,18 @@ button:focus-visible {
   font-size: 1.5em;
 }
 
+.canvas {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.palette {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .buttons {
   justify-self: center;
   margin-bottom: auto;
@@ -143,6 +155,15 @@ button:focus-visible {
 
 .buttons .btnBack {
   width: 100px;
+}
+
+.canvas-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.canvas-container div {
+  margin: 20px;
 }
 
 @media (prefers-color-scheme: light) {

@@ -44,3 +44,12 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
     console.log("Listening on port " + PORT);
 });
+
+
+/*
+
+import { createClient } from '@supabase/supabase-js'
+const supabaseUrl = 'https://nlgglwouddhvyuyzwsph.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+*/
